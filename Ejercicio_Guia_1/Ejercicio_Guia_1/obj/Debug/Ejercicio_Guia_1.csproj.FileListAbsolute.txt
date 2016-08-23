@@ -1,0 +1,6 @@
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_1\bin\Debug\Ejercicio_Guia_1.exe.config
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_1\bin\Debug\Ejercicio_Guia_1.exe
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_1\bin\Debug\Ejercicio_Guia_1.pdb
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_1\obj\Debug\Ejercicio_Guia_1.csprojResolveAssemblyReference.cache
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_1\obj\Debug\Ejercicio_Guia_1.exe
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_1\obj\Debug\Ejercicio_Guia_1.pdb

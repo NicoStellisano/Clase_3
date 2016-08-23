@@ -1,0 +1,9 @@
+D:\Stellisano\PrimeraClase\Ejercicio3\bin\Debug\Ejercicio3.exe.config
+D:\Stellisano\PrimeraClase\Ejercicio3\bin\Debug\Ejercicio3.exe
+D:\Stellisano\PrimeraClase\Ejercicio3\bin\Debug\Ejercicio3.pdb
+D:\Stellisano\PrimeraClase\Ejercicio3\obj\Debug\Ejercicio3.csprojResolveAssemblyReference.cache
+D:\Stellisano\PrimeraClase\Ejercicio3\obj\Debug\Ejercicio3.exe
+D:\Stellisano\PrimeraClase\Ejercicio3\obj\Debug\Ejercicio3.pdb
+E:\Programacion ll  C#\Stellisano\PrimeraClase\Ejercicio3\bin\Debug\Ejercicio3.exe.config
+E:\Programacion ll  C#\Stellisano\PrimeraClase\Ejercicio3\obj\Debug\Ejercicio3.exe
+E:\Programacion ll  C#\Stellisano\PrimeraClase\Ejercicio3\obj\Debug\Ejercicio3.pdb

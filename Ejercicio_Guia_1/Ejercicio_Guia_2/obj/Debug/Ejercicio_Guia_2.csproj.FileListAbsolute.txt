@@ -1,0 +1,8 @@
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_2\bin\Debug\Ejercicio_Guia_2.exe.config
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_2\bin\Debug\Ejercicio_Guia_2.exe
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_2\bin\Debug\Ejercicio_Guia_2.pdb
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_2\obj\Debug\Ejercicio_Guia_2.exe
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_2\obj\Debug\Ejercicio_Guia_2.pdb
+E:\Programacion ll  C#\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_2\bin\Debug\Ejercicio_Guia_2.exe.config
+E:\Programacion ll  C#\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_2\obj\Debug\Ejercicio_Guia_2.exe
+E:\Programacion ll  C#\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_2\obj\Debug\Ejercicio_Guia_2.pdb

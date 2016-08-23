@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ejercicio4
 {
-    class Program
+   public enum EFabricante
     {
-        static void Main(string[] args)
-        {
-        }
+        Ford,Chevrolet,Honda
     }
 }

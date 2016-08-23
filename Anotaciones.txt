@@ -1,0 +1,43 @@
+Funciones en C = Métodos en C#
+
+public = Puede acceder cualquier clase , o método, main.
+static = Para que se pueda usar en el mismo proyecto por el main , otras clases.
+
+public class = Puede usarse en otros proyectos de la Solución.
+
+Ejercicio1->Rerefences->Add->Ejercicio3->Ejercicio3."class"."method();"
+
+ Console.WriteLine(Ejercicio3.Calculadora.Sumar(6,6));
+
+Atributos = Variables dentro de Clase.
+
+Alumno Alguien;
+Alguien = new Alumno();
+
+O
+
+Alumno otro = new Alumno();
+
+Instancia = Memoria Dinamica , vectores.Dentro de la burbuja.
+
+REUTILIZACION DE CODIGO
+
+Diferencias Instancia con Estaticos:
+
+
+CONSTRUCTORES
+Tienen que tener el mismo nombre de la clase.
+Diferencia con Metodos: No devuelven nada.
+Pueden poner otros defectos, no null ni 0.
+Una unica vez por objeto, cuando se crea . Modulos varias veces por objeto.
+En la clase, primero se ejecuta el estático y luego el de instancia.
+
+Clase Auto compuesta por la clase Rueda.
+
+ENUMERADOS
+Desplegables
+enum EFabricante { Ford,Honda }
+
+fabricante = EFabricante.Honda;
+
+private = misma clase
