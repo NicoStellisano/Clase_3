@@ -30,7 +30,8 @@ namespace Ejercicio4
             */
             Carrera race;
             race = new Carrera();
-            race.MostrarCarrera();
+            race.PorTiempo(10);
+            race.MostrarCarrera();         
             Console.ReadKey();
 
         }

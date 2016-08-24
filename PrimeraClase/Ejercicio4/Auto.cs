@@ -15,12 +15,9 @@ namespace Ejercicio4
         public Rueda ruedaTD;
         public static int contadorDeObjetos;
         private static Random rnd;
-        public int kmRecorridos;
         
-        
-        
-
         private int kmRecorridos;
+        
 
         public Auto()
         {
@@ -49,8 +46,8 @@ namespace Ejercicio4
         }
 
          public void MostrarAuto()
-         {
-             Console.WriteLine("El fabricante es: " + this.fabricante);
+         {           
+             Console.WriteLine("El fabricante es: " + this.fabricante + " Kilometros: " + this.kmRecorridos +"km");        
          }
 
          public void VolverACero()
@@ -61,6 +58,16 @@ namespace Ejercicio4
          public void AgregarKm(int kilometros)
          {
              this.kmRecorridos += kilometros;
+         }
+
+         public int KmRecorrido()
+         {
+             return this.kmRecorridos;
+         }
+
+         public EFabricante Fabricante()
+         {
+             return this.fabricante;
          }
     }
 }

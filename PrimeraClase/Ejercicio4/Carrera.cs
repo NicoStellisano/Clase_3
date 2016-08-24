@@ -15,6 +15,8 @@ namespace Ejercicio4
         public Auto auto5;
         public Auto auto6;
         private static Random rnd;
+        private int aux, max;
+        private EFabricante auxFabricante;
 
         public void PorTiempo(int minutos)
         {
@@ -26,6 +28,7 @@ namespace Ejercicio4
                 this.auto4.AgregarKm(rnd.Next(10, 100));
                 this.auto5.AgregarKm(rnd.Next(10, 100));
                 this.auto6.AgregarKm(rnd.Next(10, 100));
+
             }
         }
 
@@ -43,12 +46,53 @@ namespace Ejercicio4
 
         public void MostrarCarrera()
         {
+            
             this.auto1.MostrarAuto();
             this.auto2.MostrarAuto();
             this.auto3.MostrarAuto();
             this.auto4.MostrarAuto();
             this.auto5.MostrarAuto();
             this.auto6.MostrarAuto();
+
+            aux = this.auto1.KmRecorrido();
+            if (aux > max)
+            {
+                max = aux;
+                auxFabricante = this.auto1.Fabricante();
+            }
+            aux = this.auto2.KmRecorrido();
+            if (aux > max)
+            {
+                max = aux;
+                auxFabricante = this.auto2.Fabricante();
+            }
+            aux = this.auto3.KmRecorrido();
+            if (aux > max)
+            {
+                max = aux;
+                auxFabricante = this.auto3.Fabricante();
+            }
+            aux = this.auto4.KmRecorrido();
+            if (aux > max)
+            {
+                max = aux;
+                auxFabricante = this.auto4.Fabricante();
+            }
+            aux = this.auto5.KmRecorrido();
+            if (aux > max)
+            {
+                max = aux;
+                auxFabricante = this.auto5.Fabricante();
+            }
+            aux = this.auto6.KmRecorrido();
+            if (aux > max)
+            {
+                max = aux;
+                auxFabricante = this.auto6.Fabricante();
+            }
+
+            Console.WriteLine("El mayor recorrido: " + max + "km" + " Hecho por: " + auxFabricante );
+            
         }
     }
 }
