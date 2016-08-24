@@ -15,8 +15,8 @@ namespace Ejercicio4
         public Auto auto5;
         public Auto auto6;
         private static Random rnd;
-        private int aux, max;
-        private EFabricante auxFabricante;
+        private int auxMay, max,auxMen,min = 1000;
+        private EFabricante auxFabricanteMay,auxFabricanteMen;
 
         public void PorTiempo(int minutos)
         {
@@ -54,44 +54,82 @@ namespace Ejercicio4
             this.auto5.MostrarAuto();
             this.auto6.MostrarAuto();
 
-            aux = this.auto1.KmRecorrido();
-            if (aux > max)
+            auxMay = this.auto1.KmRecorrido();
+            if (auxMay > max)
             {
-                max = aux;
-                auxFabricante = this.auto1.Fabricante();
+                max = auxMay;
+                auxFabricanteMay = this.auto1.Fabricante();
             }
-            aux = this.auto2.KmRecorrido();
-            if (aux > max)
+            auxMay = this.auto2.KmRecorrido();
+            if (auxMay > max)
             {
-                max = aux;
-                auxFabricante = this.auto2.Fabricante();
+                max = auxMay;
+                auxFabricanteMay = this.auto2.Fabricante();
             }
-            aux = this.auto3.KmRecorrido();
-            if (aux > max)
+            auxMay = this.auto3.KmRecorrido();
+            if (auxMay > max)
             {
-                max = aux;
-                auxFabricante = this.auto3.Fabricante();
+                max = auxMay;
+                auxFabricanteMay = this.auto3.Fabricante();
             }
-            aux = this.auto4.KmRecorrido();
-            if (aux > max)
+            auxMay = this.auto4.KmRecorrido();
+            if (auxMay > max)
             {
-                max = aux;
-                auxFabricante = this.auto4.Fabricante();
+                max = auxMay;
+                auxFabricanteMay = this.auto4.Fabricante();
             }
-            aux = this.auto5.KmRecorrido();
-            if (aux > max)
+            auxMay = this.auto5.KmRecorrido();
+            if (auxMay > max)
             {
-                max = aux;
-                auxFabricante = this.auto5.Fabricante();
+                max = auxMay;
+                auxFabricanteMay = this.auto5.Fabricante();
             }
-            aux = this.auto6.KmRecorrido();
-            if (aux > max)
+            auxMay = this.auto6.KmRecorrido();
+            if (auxMay > max)
             {
-                max = aux;
-                auxFabricante = this.auto6.Fabricante();
+                max = auxMay;
+                auxFabricanteMay = this.auto6.Fabricante();
             }
 
-            Console.WriteLine("El mayor recorrido: " + max + "km" + " Hecho por: " + auxFabricante );
+            auxMen = this.auto1.KmRecorrido();
+            if (auxMen < min)
+            {
+                min = auxMen;
+                auxFabricanteMen = this.auto1.Fabricante();
+            }
+            auxMen = this.auto2.KmRecorrido();
+            if (auxMen < min)
+            {
+                min = auxMen;
+                auxFabricanteMen = this.auto2.Fabricante();
+            }
+            auxMen = this.auto3.KmRecorrido();
+            if (auxMen < min)
+            {
+                min = auxMen;
+                auxFabricanteMen = this.auto3.Fabricante();
+            }
+            auxMen = this.auto4.KmRecorrido();
+            if (auxMen < min)
+            {
+                min = auxMen;
+                auxFabricanteMen = this.auto4.Fabricante();
+            }
+            auxMen = this.auto5.KmRecorrido();
+            if (auxMen < min)
+            {
+                min = auxMen;
+                auxFabricanteMen = this.auto5.Fabricante();
+            }
+            auxMen = this.auto6.KmRecorrido();
+            if (auxMen < min)
+            {
+                min = auxMen;
+                auxFabricanteMen = this.auto6.Fabricante();
+            }
+
+            Console.WriteLine("El mayor recorrido: " + max + "km" + " Hecho por: " + auxFabricanteMay );
+            Console.WriteLine("El menor recorrido: " + min + "km" + " Hecho por: " + auxFabricanteMen);
             
         }
     }

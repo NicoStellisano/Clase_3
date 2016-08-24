@@ -47,7 +47,8 @@ namespace Ejercicio4
 
          public void MostrarAuto()
          {           
-             Console.WriteLine("El fabricante es: " + this.fabricante + " Kilometros: " + this.kmRecorridos +"km");        
+             Console.WriteLine("El fabricante es: " + this.fabricante + " Kilometros: " + this.kmRecorridos +"km");
+             Console.WriteLine("******************************************************************************");
          }
 
          public void VolverACero()
