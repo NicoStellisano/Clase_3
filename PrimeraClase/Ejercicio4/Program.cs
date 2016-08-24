@@ -12,7 +12,10 @@ namespace Ejercicio4
         {
             
             Rueda otras = new Rueda("papa",3);
-            
+            Tiempo tiempo= new Tiempo(10);
+            Kilometros km = new Kilometros(40);
+
+           
           /*  EFabricante fabricante;
             fabricante = EFabricante.Honda;
             Console.WriteLine(fabricante);
@@ -34,8 +37,8 @@ namespace Ejercicio4
             Console.ForegroundColor = ConsoleColor.Yellow;
             Carrera race;
             race = new Carrera();
-            race.PorTiempo(10);
-            race.MostrarCarrera();         
+
+            race.CorrerCarrera(tiempo);     
             Console.ReadKey();
 
         }

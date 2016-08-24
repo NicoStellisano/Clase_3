@@ -54,8 +54,7 @@ namespace Ejercicio4
         /// <param name="marca">Nombre de la Marca.</param>
         public Rueda(int tamaño,string marca):this(marca,tamaño)
         {
-            this.Tamaño = tamaño;
-            this.Marca = marca;
+           
         }
 
 

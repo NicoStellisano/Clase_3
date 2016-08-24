@@ -17,6 +17,7 @@ namespace Ejercicio4
         private static Random rnd;
         
         private int kmRecorridos;
+        private int tiempoDemorado;
         
 
         public Auto()
@@ -47,23 +48,36 @@ namespace Ejercicio4
 
          public void MostrarAuto()
          {           
-             Console.WriteLine("El fabricante es: " + this.fabricante + " Kilometros: " + this.kmRecorridos +"km");
+             Console.WriteLine("El fabricante es: " + this.fabricante + " Kilometros: " + this.kmRecorridos +"km en: " + this.tiempoDemorado + " minutos");
              Console.WriteLine("*******************************************************************************");
          }
 
          public void VolverACero()
          {
              this.kmRecorridos = 0;
+             this.tiempoDemorado = 0;
          }
 
-         public void AgregarKm(int kilometros)
+         public void AgregarKm(int kilometros, int tiempo)
          {
              this.kmRecorridos += kilometros;
+             this.tiempoDemorado = tiempo;
+         }
+
+         public void AgregarTiempo(int tiempo,int km)
+         {
+             this.kmRecorridos = km;
+             this.tiempoDemorado += tiempo;
          }
 
          public int KmRecorrido()
          {
              return this.kmRecorridos;
+         }
+
+         public int TiempoDemora()
+         {
+             return this.tiempoDemorado;
          }
 
          public EFabricante Fabricante()
