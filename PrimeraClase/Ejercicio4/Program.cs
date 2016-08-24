@@ -10,6 +10,9 @@ namespace Ejercicio4
     {
         static void Main(string[] args)
         {
+            
+            Rueda otras = new Rueda("papa",3);
+            
           /*  EFabricante fabricante;
             fabricante = EFabricante.Honda;
             Console.WriteLine(fabricante);
@@ -28,6 +31,7 @@ namespace Ejercicio4
             Auto auto4;
             auto4 = new Auto();
             */
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Carrera race;
             race = new Carrera();
             race.PorTiempo(10);

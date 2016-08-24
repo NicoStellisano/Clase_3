@@ -127,8 +127,10 @@ namespace Ejercicio4
                 min = auxMen;
                 auxFabricanteMen = this.auto6.Fabricante();
             }
-
+            Console.WriteLine("*******************************************************************************");
+            Console.WriteLine("*******************************************************************************");
             Console.WriteLine("El mayor recorrido: " + max + "km" + " Hecho por: " + auxFabricanteMay );
+            Console.WriteLine("*******************************************************************************");
             Console.WriteLine("El menor recorrido: " + min + "km" + " Hecho por: " + auxFabricanteMen);
             
         }
