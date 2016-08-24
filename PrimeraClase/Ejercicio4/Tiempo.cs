@@ -14,8 +14,8 @@ namespace Ejercicio4
         {
             this.cantidad = cant;
         }
-
-        public static Tiempo Sumar(Tiempo tiempoaux, int valor)
+        // Sumar = operator +
+        public static Tiempo operator +(Tiempo tiempoaux, int valor)
         {
             tiempoaux.cantidad = tiempoaux.cantidad + valor;
             return tiempoaux;
