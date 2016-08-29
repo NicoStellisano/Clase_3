@@ -1,0 +1,5 @@
+C:\Users\Nico\Desktop\Clase_3\Ejercicio_Guia_1\Ejercicio_Guia_22\bin\Debug\Ejercicio_Guia_22.exe.config
+C:\Users\Nico\Desktop\Clase_3\Ejercicio_Guia_1\Ejercicio_Guia_22\bin\Debug\Ejercicio_Guia_22.exe
+C:\Users\Nico\Desktop\Clase_3\Ejercicio_Guia_1\Ejercicio_Guia_22\bin\Debug\Ejercicio_Guia_22.pdb
+C:\Users\Nico\Desktop\Clase_3\Ejercicio_Guia_1\Ejercicio_Guia_22\obj\Debug\Ejercicio_Guia_22.exe
+C:\Users\Nico\Desktop\Clase_3\Ejercicio_Guia_1\Ejercicio_Guia_22\obj\Debug\Ejercicio_Guia_22.pdb
