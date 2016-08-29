@@ -37,7 +37,7 @@ namespace Ejercicio4
             Console.ForegroundColor = ConsoleColor.Yellow;
             Carrera race;
             race = new Carrera();
-
+            tiempo = tiempo + 3;
             race.CorrerCarrera(tiempo);     
             Console.ReadKey();
 
