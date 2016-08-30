@@ -52,14 +52,14 @@ namespace Ejercicio4
         public void CorrerCarrera(Tiempo tiempo)
         {
             this.PorTiempo(tiempo);
-            this.MostrarCarrera();
+            this.MostrarCarrera(tiempo);
         }
 
         public void CorrerCarrera(Kilometros kilometros)
         {
             this.PorKilometros(kilometros);
             
-            this.MostrarCarreraTiempo();
+            this.MostrarCarrera(kilometros);
         }
 
 
@@ -75,10 +75,11 @@ namespace Ejercicio4
 
         }
 
-        public void MostrarCarrera()
+        public void MostrarCarrera(Tiempo tiempo)
         {
             Console.WriteLine();
             Console.WriteLine();
+            Console.WriteLine("Carrera por " + (int)tiempo + " Minutos: ");
             Console.WriteLine("*******************************************************************************");
 
             this.auto1.MostrarAuto();
@@ -171,11 +172,12 @@ namespace Ejercicio4
 
 
 
-        public void MostrarCarreraTiempo()
+        public void MostrarCarrera(Kilometros km)
         {
 
             Console.WriteLine();
             Console.WriteLine();
+            Console.WriteLine("Carrera por " + (int)km + " Kilometros: ");
             Console.WriteLine("*******************************************************************************");
             this.auto1.MostrarAuto();
             this.auto2.MostrarAuto();
