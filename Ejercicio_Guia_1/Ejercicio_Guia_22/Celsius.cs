@@ -30,6 +30,18 @@ namespace Mediciones
                 return aux;
             }
 
+            public static Celsius operator ++(Celsius celsius)
+            {
+                celsius.cant++;
+                return celsius;
+            }
+
+            public static Celsius operator --(Celsius celsius)
+            {
+                celsius.cant--;
+                return celsius;
+            }
+
         public static Celsius operator +(Fahrenheit fahrenheit,Celsius celsius)
         {
             celsius.cant += (fahrenheit.cant - 32) * 5 / 9;
@@ -97,6 +109,11 @@ namespace Mediciones
                  if (celsius.cant != Math.Round((aux - 32) * 5 / 9))
                      return true;
                  return false;
+             }
+
+             public static implicit operator Celsius(int valor)
+             {
+                 return new Celsius(valor);
              }
 
 

@@ -14,6 +14,13 @@ namespace Ejercicio_Guia_22
             Mediciones.Fahrenheit fahrenheit = new Mediciones.Fahrenheit(41.00000);
             Mediciones.Kelvin kelvin = new Mediciones.Kelvin(278.1500);
 
+            switch (Validaciones1.Menu.MenuV())
+            {
+                case 1:
+                    Mediciones.Suma.Sumas();
+                    break;
+            }
+
            /* Comparacion
             * if (kelvin == fahrenheit)
             {

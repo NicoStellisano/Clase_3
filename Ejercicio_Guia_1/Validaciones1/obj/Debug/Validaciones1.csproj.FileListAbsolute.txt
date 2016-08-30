@@ -1,0 +1,5 @@
+D:\GitStellisano\Ejercicio_Guia_1\Validaciones1\bin\Debug\Validaciones1.exe.config
+D:\GitStellisano\Ejercicio_Guia_1\Validaciones1\bin\Debug\Validaciones1.exe
+D:\GitStellisano\Ejercicio_Guia_1\Validaciones1\bin\Debug\Validaciones1.pdb
+D:\GitStellisano\Ejercicio_Guia_1\Validaciones1\obj\Debug\Validaciones1.exe
+D:\GitStellisano\Ejercicio_Guia_1\Validaciones1\obj\Debug\Validaciones1.pdb

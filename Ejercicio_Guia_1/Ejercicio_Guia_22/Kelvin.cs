@@ -30,6 +30,18 @@ namespace Mediciones
             return aux;
         }
 
+        public static Kelvin operator ++(Kelvin kelvin)
+        {
+            kelvin.cant++;
+            return kelvin;
+        }
+
+        public static Kelvin operator --(Kelvin kelvin)
+        {
+            kelvin.cant--;
+            return kelvin;
+        }
+
         public static Kelvin operator +(Fahrenheit fahrenheit, Kelvin kelvin)
         {
             kelvin.cant += (fahrenheit.cant + 459.67) * 5 / 9;
@@ -97,6 +109,11 @@ namespace Mediciones
             if (kelvin.cant != (aux + 459.67) * 5 / 9)
                 return true;
             return false;
+        }
+
+        public static implicit operator Kelvin(int valor)
+        {
+            return new Kelvin(valor);
         }
     }
 }

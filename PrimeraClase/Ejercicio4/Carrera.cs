@@ -14,47 +14,50 @@ namespace Ejercicio4
         public Auto auto4;
         public Auto auto5;
         public Auto auto6;
-        private static Random rnd;
-        private int auxMay, max, auxMen, min = 1000000;
-        private EFabricante auxFabricanteMay, auxFabricanteMen;
+        private static Random _rnd;
+        private int _auxMay, _max, _auxMen, _min = 1000000;
+        private EFabricante _auxFabricanteMay, _auxFabricanteMen;
+        private Kilometros _km;
+        private Tiempo _tiempo;
 
-        public void PorTiempo(int minutos)
+        public void PorTiempo(Tiempo minutos)
         {
-            for (int i = 0; i < minutos; i++)
+            for (int i = 0; i < (int)minutos; i++)
             {
-                this.auto1.AgregarKm(rnd.Next(10, 100),minutos);
-                this.auto2.AgregarKm(rnd.Next(10, 100), minutos);
-                this.auto3.AgregarKm(rnd.Next(10, 100), minutos);
-                this.auto4.AgregarKm(rnd.Next(10, 100), minutos);
-                this.auto5.AgregarKm(rnd.Next(10, 100), minutos);
-                this.auto6.AgregarKm(rnd.Next(10, 100), minutos);
 
+                this.auto1.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
+                this.auto2.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
+                this.auto3.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
+                this.auto4.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
+                this.auto5.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
+                this.auto6.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
             }
         }
 
-        public void PorKilometros(int km)
+        public void PorKilometros(Kilometros km)
         {
-            for (int i = 0; i < km; i++)
+            for (int i = 0; i < (int)km; i++)
             {
-                this.auto1.AgregarTiempo(rnd.Next(10, 100),km);
-                this.auto2.AgregarTiempo(rnd.Next(10, 100),km);
-                this.auto3.AgregarTiempo(rnd.Next(10, 100),km);
-                this.auto4.AgregarTiempo(rnd.Next(10, 100),km);
-                this.auto5.AgregarTiempo(rnd.Next(10, 100),km);
-                this.auto6.AgregarTiempo(rnd.Next(10, 100),km);
+               
+                this.auto1.Agregar((Tiempo)_rnd.Next(10, 100),(int)km);
+                this.auto2.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
+                this.auto3.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
+                this.auto4.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
+                this.auto5.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
+                this.auto6.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
 
             }
         }
 
         public void CorrerCarrera(Tiempo tiempo)
         {
-            this.PorTiempo(tiempo.cantidad);
+            this.PorTiempo(tiempo);
             this.MostrarCarrera();
         }
 
         public void CorrerCarrera(Kilometros kilometros)
         {
-            this.PorKilometros(kilometros.cantidad);
+            this.PorKilometros(kilometros);
             
             this.MostrarCarreraTiempo();
         }
@@ -68,12 +71,15 @@ namespace Ejercicio4
             this.auto4 = new Auto();
             this.auto5 = new Auto();
             this.auto6 = new Auto();
-            rnd = new Random();
+            _rnd = new Random();
 
         }
 
         public void MostrarCarrera()
         {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("*******************************************************************************");
 
             this.auto1.MostrarAuto();
             this.auto2.MostrarAuto();
@@ -82,84 +88,84 @@ namespace Ejercicio4
             this.auto5.MostrarAuto();
             this.auto6.MostrarAuto();
 
-            auxMay = this.auto1.KmRecorrido();
-            if (auxMay > max)
+            _auxMay = (int)this.auto1.KmRecorrido();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto1.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto1.Fabricante();
             }
-            auxMay = this.auto2.KmRecorrido();
-            if (auxMay > max)
+            _auxMay = (int)this.auto2.KmRecorrido();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto2.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto2.Fabricante();
             }
-            auxMay = this.auto3.KmRecorrido();
-            if (auxMay > max)
+            _auxMay = (int)this.auto3.KmRecorrido();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto3.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto3.Fabricante();
             }
-            auxMay = this.auto4.KmRecorrido();
-            if (auxMay > max)
+            _auxMay = (int)this.auto4.KmRecorrido();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto4.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto4.Fabricante();
             }
-            auxMay = this.auto5.KmRecorrido();
-            if (auxMay > max)
+            _auxMay = (int)this.auto5.KmRecorrido();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto5.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto5.Fabricante();
             }
-            auxMay = this.auto6.KmRecorrido();
-            if (auxMay > max)
+            _auxMay = (int)this.auto6.KmRecorrido();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto6.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto6.Fabricante();
             }
 
-            auxMen = this.auto1.KmRecorrido();
-            if (auxMen < min)
+            _auxMen = (int)this.auto1.KmRecorrido();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto1.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto1.Fabricante();
             }
-            auxMen = this.auto2.KmRecorrido();
-            if (auxMen < min)
+            _auxMen = (int)this.auto2.KmRecorrido();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto2.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto2.Fabricante();
             }
-            auxMen = this.auto3.KmRecorrido();
-            if (auxMen < min)
+            _auxMen = (int)this.auto3.KmRecorrido();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto3.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto3.Fabricante();
             }
-            auxMen = this.auto4.KmRecorrido();
-            if (auxMen < min)
+            _auxMen = (int)this.auto4.KmRecorrido();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto4.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto4.Fabricante();
             }
-            auxMen = this.auto5.KmRecorrido();
-            if (auxMen < min)
+            _auxMen = (int)this.auto5.KmRecorrido();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto5.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto5.Fabricante();
             }
-            auxMen = this.auto6.KmRecorrido();
-            if (auxMen < min)
+            _auxMen = (int)this.auto6.KmRecorrido();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto6.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto6.Fabricante();
             }
             Console.WriteLine("*******************************************************************************");
             Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("El mayor recorrido(Ganador): " + max + "km" + " Hecho por: " + auxFabricanteMay);
+            Console.WriteLine("El mayor recorrido(Ganador): " + _max + "km" + " Hecho por: " + _auxFabricanteMay);
             Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("El menor recorrido: " + min + "km" + " Hecho por: " + auxFabricanteMen);
+            Console.WriteLine("El menor recorrido: " + _min + "km" + " Hecho por: " + _auxFabricanteMen);
 
         }
 
@@ -167,7 +173,10 @@ namespace Ejercicio4
 
         public void MostrarCarreraTiempo()
         {
-            
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("*******************************************************************************");
             this.auto1.MostrarAuto();
             this.auto2.MostrarAuto();
             this.auto3.MostrarAuto();
@@ -175,84 +184,84 @@ namespace Ejercicio4
             this.auto5.MostrarAuto();
             this.auto6.MostrarAuto();
 
-            auxMay = this.auto1.TiempoDemora();
-            if (auxMay > max)
+            _auxMay = (int)this.auto1.TiempoDemora();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto1.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto1.Fabricante();
             }
-            auxMay = this.auto2.TiempoDemora();
-            if (auxMay > max)
+            _auxMay = (int)this.auto2.TiempoDemora();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto2.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto2.Fabricante();
             }
-            auxMay = this.auto3.TiempoDemora();
-            if (auxMay > max)
+            _auxMay = (int)this.auto3.TiempoDemora();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto3.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto3.Fabricante();
             }
-            auxMay = this.auto4.TiempoDemora();
-            if (auxMay > max)
+            _auxMay = (int)this.auto4.TiempoDemora();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto4.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto4.Fabricante();
             }
-            auxMay = this.auto5.TiempoDemora();
-            if (auxMay > max)
+            _auxMay = (int)this.auto5.TiempoDemora();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto5.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto5.Fabricante();
             }
-            auxMay = this.auto6.TiempoDemora();
-            if (auxMay > max)
+            _auxMay = (int)this.auto6.TiempoDemora();
+            if (_auxMay > _max)
             {
-                max = auxMay;
-                auxFabricanteMay = this.auto6.Fabricante();
+                _max = _auxMay;
+                _auxFabricanteMay = this.auto6.Fabricante();
             }
 
-            auxMen = this.auto1.TiempoDemora();
-            if (auxMen < min)
+            _auxMen = (int)this.auto1.TiempoDemora();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto1.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto1.Fabricante();
             }
-            auxMen = this.auto2.TiempoDemora();
-            if (auxMen < min)
+            _auxMen = (int)this.auto2.TiempoDemora();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto2.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto2.Fabricante();
             }
-            auxMen = this.auto3.TiempoDemora();
-            if (auxMen < min)
+            _auxMen = (int)this.auto3.TiempoDemora();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto3.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto3.Fabricante();
             }
-            auxMen = this.auto4.TiempoDemora();
-            if (auxMen < min)
+            _auxMen = (int)this.auto4.TiempoDemora();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto4.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto4.Fabricante();
             }
-            auxMen = this.auto5.TiempoDemora();
-            if (auxMen < min)
+            _auxMen = (int)this.auto5.TiempoDemora();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto5.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto5.Fabricante();
             }
-            auxMen = this.auto6.TiempoDemora();
-            if (auxMen < min)
+            _auxMen = (int)this.auto6.TiempoDemora();
+            if (_auxMen < _min)
             {
-                min = auxMen;
-                auxFabricanteMen = this.auto6.Fabricante();
+                _min = _auxMen;
+                _auxFabricanteMen = this.auto6.Fabricante();
             }
             Console.WriteLine("*******************************************************************************");
             Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("El mayor tiempo: " + max + " minutos" + " Hecho por: " + auxFabricanteMay );
+            Console.WriteLine("El mayor tiempo: " + _max + " minutos" + " Hecho por: " + _auxFabricanteMay );
             Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("El menor tiempo(Ganador): " + min + " minutos" + " Hecho por: " + auxFabricanteMen);
+            Console.WriteLine("El menor tiempo(Ganador): " + _min + " minutos" + " Hecho por: " + _auxFabricanteMen);
             
         }
     }

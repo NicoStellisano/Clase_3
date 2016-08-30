@@ -41,3 +41,5 @@ enum EFabricante { Ford,Honda }
 fabricante = EFabricante.Honda;
 
 private = misma clase
+
+HACER CENTRALITA

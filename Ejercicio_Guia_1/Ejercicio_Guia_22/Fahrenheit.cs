@@ -28,6 +28,18 @@ namespace Mediciones
             return aux;
         }
 
+        public static Fahrenheit operator ++(Fahrenheit fahrenheit)
+        {
+            fahrenheit.cant++;
+            return fahrenheit;
+        }
+
+        public static Fahrenheit operator --(Fahrenheit fahrenheit)
+        {
+            fahrenheit.cant--;
+            return fahrenheit;
+        }
+
         public static Fahrenheit operator +(Celsius celsius,Fahrenheit fahrenheit)
         {
             fahrenheit.cant += celsius.cant * 9 / 5 + 32;
@@ -91,6 +103,11 @@ namespace Mediciones
             if (fahrenheit.cant != Math.Round(kelvin.cant * 9 / 5 - 459.67))
                 return true;
             return false;
+        }
+
+        public static implicit operator Fahrenheit(int valor)
+        {
+            return new Fahrenheit(valor);
         }
     }
 }

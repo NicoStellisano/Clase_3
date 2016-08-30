@@ -16,8 +16,8 @@ namespace Ejercicio4
         public static int contadorDeObjetos;
         private static Random rnd;
         
-        private int kmRecorridos;
-        private int tiempoDemorado;
+        private Kilometros kmRecorridos;
+        private Tiempo tiempoDemorado;
         
 
         public Auto()
@@ -30,6 +30,8 @@ namespace Ejercicio4
             this.ruedaTI = new Rueda();
             this.ruedaTD = new Rueda();
             Auto.contadorDeObjetos++;
+            this.kmRecorridos = 0;
+            this.tiempoDemorado = 0;
         }
 
         public static bool CompararAuto(Auto a1 ,Auto a2)
@@ -47,8 +49,8 @@ namespace Ejercicio4
         }
 
          public void MostrarAuto()
-         {           
-             Console.WriteLine("El fabricante es: " + this.fabricante + " Kilometros: " + this.kmRecorridos +"km en: " + this.tiempoDemorado + " minutos");
+         {
+             Console.WriteLine("El fabricante es: " + this.fabricante + " Kilometros: " + (int)this.kmRecorridos + "km en: " + (int)this.tiempoDemorado + " minutos");
              Console.WriteLine("*******************************************************************************");
          }
 
@@ -57,7 +59,7 @@ namespace Ejercicio4
              this.kmRecorridos = 0;
              this.tiempoDemorado = 0;
          }
-
+        //Deprecated por sobrecarga de metodos
          public void AgregarKm(int kilometros, int tiempo)
          {
              this.kmRecorridos += kilometros;
@@ -70,12 +72,12 @@ namespace Ejercicio4
              this.tiempoDemorado += tiempo;
          }
 
-         public int KmRecorrido()
+         public Kilometros KmRecorrido()
          {
              return this.kmRecorridos;
          }
 
-         public int TiempoDemora()
+         public Tiempo TiempoDemora()
          {
              return this.tiempoDemorado;
          }
@@ -83,6 +85,18 @@ namespace Ejercicio4
          public EFabricante Fabricante()
          {
              return this.fabricante;
+         }
+
+         public void Agregar(Tiempo tiempo, int km)
+         {
+             this.tiempoDemorado += tiempo;
+             this.kmRecorridos = km;
+         }
+
+         public void Agregar(Kilometros kilometros, int tiempo)
+         {
+             this.kmRecorridos += kilometros;
+             this.tiempoDemorado = tiempo;
          }
     }
 }
