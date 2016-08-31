@@ -10,33 +10,36 @@ namespace Ejercicio_Guia_22
     {
         static void Main(string[] args)
         {
-            Mediciones.Celsius celsius = new Mediciones.Celsius(5);
+            Console.Title = "Ejercicio Nro 22";
+            Mediciones.Celsius celsius1 = new Mediciones.Celsius(5);
             Mediciones.Fahrenheit fahrenheit = new Mediciones.Fahrenheit(41.00000);
-            Mediciones.Kelvin kelvin = new Mediciones.Kelvin(278.1500);
+            Mediciones.Kelvin kelvin1 = new Mediciones.Kelvin(278.1500);
+            Mediciones.Celsius celsius2 = new Mediciones.Celsius(5);
+            Mediciones.Kelvin kelvin2 = new Mediciones.Kelvin(278.1500);
+            Mediciones.Fahrenheit fahrenheit1 = new Mediciones.Fahrenheit(41.00000);
+            Mediciones.Fahrenheit fahrenheit2 = new Mediciones.Fahrenheit(41.00000);
 
-            switch (Validaciones1.Menu.MenuV())
-            {
-                case 1:
-                    Mediciones.Suma.Sumas();
-                    break;
-            }
 
-           /* Comparacion
-            * if (kelvin == fahrenheit)
+
+
+
+            
+           
+             if (kelvin1 == kelvin2)
             {
                 Console.WriteLine("Funciona");
             }
-*/
+
             /* Suma
-             * celsius = kelvin + celsius;
+             * celsius1 = kelvin1 + celsius1;
             Console.WriteLine("Celsius : " + celsius.cant);
              */
            /* Convertido
-            * kelvin.cant = celsius.CCelsius(kelvin);
-            Console.WriteLine(kelvin.cant);
+            * kelvin1.cant = celsius1.CCelsius(kelvin);
+            Console.WriteLine(kelvin1.cant);
        
-            fahrenheit.cant = kelvin.CKelvin(fahrenheit);
-            Console.WriteLine(fahrenheit.cant);
+            fahrenheit1.cant = kelvin1.CKelvin(fahrenheit1);
+            Console.WriteLine(fahrenheit1.cant);
             */ 
             Console.ReadKey();
             
@@ -44,3 +47,7 @@ namespace Ejercicio_Guia_22
         }
     }
 }
+
+
+
+

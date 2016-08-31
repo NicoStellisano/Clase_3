@@ -115,5 +115,31 @@ namespace Mediciones
         {
             return new Kelvin(valor);
         }
+
+        public static Kelvin operator +(Kelvin kelvin1, Kelvin kelvin2)
+        {
+            kelvin1.cant += kelvin2.cant - 32;
+            return kelvin1;
+        }
+
+        public static Kelvin operator -(Kelvin kelvin1, Kelvin kelvin2)
+        {
+            kelvin1.cant -= kelvin2.cant - 32;
+            return kelvin1;
+        }
+
+        public static bool operator ==(Kelvin kelvin1, Kelvin kelvin2)
+        {
+            if (kelvin1.cant == kelvin2.cant)
+                return true;
+            return false;
+        }
+
+        public static bool operator !=(Kelvin kelvin1, Kelvin kelvin2)
+        {
+            if (kelvin1.cant != (kelvin2.cant))
+                return true;
+            return false;
+        }
     }
 }

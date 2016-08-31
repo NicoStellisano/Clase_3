@@ -1,0 +1,9 @@
+D:\GitStellisano\PrimeraClase\Ejercicio6\bin\Debug\Ejercicio6.exe.config
+D:\GitStellisano\PrimeraClase\Ejercicio6\bin\Debug\Ejercicio6.exe
+D:\GitStellisano\PrimeraClase\Ejercicio6\bin\Debug\Ejercicio6.pdb
+D:\GitStellisano\PrimeraClase\Ejercicio6\obj\Debug\Ejercicio6.csprojResolveAssemblyReference.cache
+D:\GitStellisano\PrimeraClase\Ejercicio6\obj\Debug\Ejercicio6.Properties.Resources.resources
+D:\GitStellisano\PrimeraClase\Ejercicio6\obj\Debug\Ejercicio6.csproj.GenerateResource.Cache
+D:\GitStellisano\PrimeraClase\Ejercicio6\obj\Debug\Ejercicio6.exe
+D:\GitStellisano\PrimeraClase\Ejercicio6\obj\Debug\Ejercicio6.pdb
+D:\GitStellisano\PrimeraClase\Ejercicio6\obj\Debug\Ejercicio6.Form1.resources

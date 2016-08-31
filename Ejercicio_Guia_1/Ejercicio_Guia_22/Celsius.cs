@@ -117,6 +117,33 @@ namespace Mediciones
              }
 
 
+             public static Celsius operator +(Celsius celsius, Celsius celsius2)
+             {
+                 celsius.cant += celsius2.cant - 32;
+                 return celsius;
+             }
+
+             public static Celsius operator -(Celsius celsius, Celsius celsius2)
+             {
+                 celsius.cant -= celsius2.cant;
+                 return celsius;
+             }
+
+             public static bool operator ==(Celsius celsius, Celsius celsius2)
+             {
+                 if (celsius.cant == celsius2.cant)
+                     return true;
+                 return false;
+             }
+
+             public static bool operator !=(Celsius celsius, Celsius celsius2)
+             {
+                 if (celsius.cant != (celsius2.cant))
+                     return true;
+                 return false;
+             }
+
+
     }
 }
 

@@ -8,7 +8,7 @@ namespace Mediciones
 {
     public class Suma
     {
-        public static string cantidadS;
+       /* public static string cantidadS;
         public static int aux1;
         public static int aux2;
         

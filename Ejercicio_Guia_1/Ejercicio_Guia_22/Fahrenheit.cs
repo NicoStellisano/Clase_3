@@ -109,5 +109,31 @@ namespace Mediciones
         {
             return new Fahrenheit(valor);
         }
+
+        public static Fahrenheit operator +(Fahrenheit fahrenheit1, Fahrenheit fahrenheit2)
+        {
+            fahrenheit1.cant += fahrenheit2.cant - 32;
+            return fahrenheit1;
+        }
+
+        public static Fahrenheit operator -(Fahrenheit fahrenheit1, Fahrenheit fahrenheit2)
+        {
+            fahrenheit1.cant -= fahrenheit2.cant - 32;
+            return fahrenheit1;
+        }
+
+        public static bool operator ==(Fahrenheit fahrenheit1, Fahrenheit fahrenheit2)
+        {
+            if (fahrenheit1.cant == fahrenheit2.cant)
+                return true;
+            return false;
+        }
+
+        public static bool operator !=(Fahrenheit fahrenheit1, Fahrenheit fahrenheit2)
+        {
+            if (fahrenheit1.cant != (fahrenheit2.cant))
+                return true;
+            return false;
+        }
     }
 }
