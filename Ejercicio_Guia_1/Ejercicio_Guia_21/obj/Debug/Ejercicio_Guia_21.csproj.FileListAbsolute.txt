@@ -1,1 +1,2 @@
 D:\GitStellisano\Ejercicio_Guia_1\Ejercicio_Guia_21\bin\Debug\Ejercicio_Guia_21.exe.config
+D:\Stellisano\Ejercicio_Guia_1\Ejercicio_Guia_21\bin\Debug\Ejercicio_Guia_21.exe.config

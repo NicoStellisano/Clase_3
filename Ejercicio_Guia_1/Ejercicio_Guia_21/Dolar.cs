@@ -18,9 +18,7 @@ namespace Monedas
 
             public double CADolar(Euro Euro)
             {
-                aux = this.cant * 9 / 5 + 32;
-                aux = (aux + 459.67) * 5 / 9;
-                return aux;
+                return Euro.cant / 1.3642;
             }
 
          
