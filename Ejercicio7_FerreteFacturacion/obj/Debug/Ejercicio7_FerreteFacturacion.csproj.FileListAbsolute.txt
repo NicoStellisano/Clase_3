@@ -1,0 +1,11 @@
+D:\GitStellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\bin\Debug\Ejercicio7_FerreteFacturacion.exe.config
+D:\GitStellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\bin\Debug\Ejercicio7_FerreteFacturacion.exe
+D:\GitStellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\bin\Debug\Ejercicio7_FerreteFacturacion.pdb
+D:\GitStellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\obj\Debug\Ejercicio7_FerreteFacturacion.Form1.resources
+D:\GitStellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\obj\Debug\Ejercicio7_FerreteFacturacion.Properties.Resources.resources
+D:\GitStellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\obj\Debug\Ejercicio7_FerreteFacturacion.csproj.GenerateResource.Cache
+D:\GitStellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\obj\Debug\Ejercicio7_FerreteFacturacion.exe
+D:\GitStellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\obj\Debug\Ejercicio7_FerreteFacturacion.pdb
+D:\Stellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\bin\Debug\Ejercicio7_FerreteFacturacion.exe.config
+D:\Stellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\obj\Debug\Ejercicio7_FerreteFacturacion.exe
+D:\Stellisano\PrimeraClase\Ejercicio7_FerreteFacturacion\obj\Debug\Ejercicio7_FerreteFacturacion.pdb
