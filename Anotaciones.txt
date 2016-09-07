@@ -50,3 +50,6 @@ Composicion
 
 ABM Alta Baja Modificacion
 
+
+GENERIC = GENERO
+Solo 1 tipo de dato

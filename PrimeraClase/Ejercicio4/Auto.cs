@@ -50,9 +50,16 @@ namespace Ejercicio4
 
          public void MostrarAuto()
          {
-             Console.WriteLine("El fabricante es: " + this.fabricante + " Kilometros: " + (int)this.kmRecorridos + "km en: " + (int)this.tiempoDemorado + " minutos");
-             Console.WriteLine("*******************************************************************************");
+             retornarString();
          }
+
+        public string retornarString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("El fabricante es: " + this.fabricante + " Kilometros: " + (int)this.kmRecorridos + "km en: " + (int)this.tiempoDemorado + " minutos");
+
+            return sb.ToString();
+        }
 
          public void VolverACero()
          {

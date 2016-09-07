@@ -19,3 +19,9 @@ D:\GitStellisano\PrimeraClase\Ejercicio4\obj\Debug\Ejercicio4.pdb
 D:\GitStellisano\PrimeraClase\Ejercicio4\bin\Debug\Ejercicio4.exe
 D:\GitStellisano\PrimeraClase\Ejercicio4\bin\Debug\Ejercicio4.pdb
 D:\GitStellisano\PrimeraClase\Ejercicio4\obj\Debug\Ejercicio4.csprojResolveAssemblyReference.cache
+D:\GitStellisano1\PrimeraClase\Ejercicio4\bin\Debug\Ejercicio4.exe.config
+D:\GitStellisano1\PrimeraClase\Ejercicio4\obj\Debug\Ejercicio4.exe
+D:\GitStellisano1\PrimeraClase\Ejercicio4\obj\Debug\Ejercicio4.pdb
+D:\GitStellisano1\PrimeraClase\Ejercicio4\bin\Debug\Ejercicio4.exe
+D:\GitStellisano1\PrimeraClase\Ejercicio4\bin\Debug\Ejercicio4.pdb
+D:\GitStellisano1\PrimeraClase\Ejercicio4\obj\Debug\Ejercicio4.csprojResolveAssemblyReference.cache

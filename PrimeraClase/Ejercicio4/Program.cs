@@ -12,6 +12,7 @@ namespace Ejercicio4
         {
             
             Rueda otras = new Rueda("papa",3);
+            Auto auto1 = new Auto();
            
             Tiempo tmp;
             tmp = 10;
@@ -40,6 +41,10 @@ namespace Ejercicio4
             Console.ForegroundColor = ConsoleColor.Yellow;
             Carrera race;
             race = new Carrera();
+            race += auto1;
+            race += new Auto();
+
+
            
             race.CorrerCarrera(tmp);
 

@@ -6,31 +6,51 @@ using System.Threading.Tasks;
 
 namespace Ejercicio4
 {
+    #region Clase
     public class Carrera
     {
-        public Auto auto1;
+        #region Atributos
+        #region Depreticated
+
+        //Depreticated por Colección
+        /*public Auto auto1;
         public Auto auto2;
         public Auto auto3;
         public Auto auto4;
         public Auto auto5;
         public Auto auto6;
+         */
+        #endregion
+        public List<Auto> listaDeAutos;
         private static Random _rnd;
         private int _auxMay, _max, _auxMen, _min = 1000000;
         private EFabricante _auxFabricanteMay, _auxFabricanteMen;
         private Kilometros _km;
         private Tiempo _tiempo;
+    
+        
+        
 
+        #endregion
+
+        #region CorrerCarrera
         public void PorTiempo(Tiempo minutos)
         {
             for (int i = 0; i < (int)minutos; i++)
             {
+                foreach (Auto item in this.listaDeAutos)
+	            {
+                    item.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
+		 
+	            }
 
-                this.auto1.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
+                /*this.auto1.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
                 this.auto2.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
                 this.auto3.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
                 this.auto4.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
                 this.auto5.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
                 this.auto6.Agregar((Kilometros)_rnd.Next(10, 100), (int)minutos);
+                 */ 
             }
         }
 
@@ -38,13 +58,20 @@ namespace Ejercicio4
         {
             for (int i = 0; i < (int)km; i++)
             {
+                foreach (Auto item in this.listaDeAutos)
+	            {
+		             item.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
+
+	            }
+
                
-                this.auto1.Agregar((Tiempo)_rnd.Next(10, 100),(int)km);
+                /*this.auto1.Agregar((Tiempo)_rnd.Next(10, 100),(int)km);
                 this.auto2.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
                 this.auto3.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
                 this.auto4.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
                 this.auto5.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
                 this.auto6.Agregar((Tiempo)_rnd.Next(10, 100), (int)km);
+                 */ 
 
             }
         }
@@ -52,6 +79,7 @@ namespace Ejercicio4
         public void CorrerCarrera(Tiempo tiempo)
         {
             this.PorTiempo(tiempo);
+    
             this.MostrarCarrera(tiempo);
         }
 
@@ -61,35 +89,77 @@ namespace Ejercicio4
             
             this.MostrarCarrera(kilometros);
         }
+        #endregion
 
+        #region Constructores
 
         public Carrera()
         {
-            this.auto1 = new Auto();
+            //Depreticated por Colecciones
+           /* this.auto1 = new Auto();
             this.auto2 = new Auto();
             this.auto3 = new Auto();
             this.auto4 = new Auto();
             this.auto5 = new Auto();
             this.auto6 = new Auto();
+            */
+
+            this.listaDeAutos = new List<Auto>();
             _rnd = new Random();
 
         }
+        #endregion
 
-        public void MostrarCarrera(Tiempo tiempo)
+        
+        #region Mostrar
+
+        public string MostrarCarrera(Tiempo tiempo)
         {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Carrera por " + (int)tiempo + " Minutos: ");
-            Console.WriteLine("*******************************************************************************");
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine();
+            sb.AppendLine("Carrera por " + (int)tiempo + " Minutos: ");
+            sb.AppendLine("*******************************************************************************");
 
-            this.auto1.MostrarAuto();
+            foreach (Auto car in this.listaDeAutos)
+            {
+                car.MostrarAuto();
+            }
+            #region Depreticated
+
+            /*this.auto1.MostrarAuto();
             this.auto2.MostrarAuto();
             this.auto3.MostrarAuto();
             this.auto4.MostrarAuto();
             this.auto5.MostrarAuto();
-            this.auto6.MostrarAuto();
+            this.auto6.MostrarAuto(); */
+            #endregion
 
-            _auxMay = (int)this.auto1.KmRecorrido();
+            for (int i = 0; i < this.listaDeAutos.Count; i++)
+            {
+                if (i == 0)
+                {
+                   _auxMay = (int)this.listaDeAutos[i].KmRecorrido();
+                   _auxMen = (int)this.listaDeAutos[i].KmRecorrido();
+                   continue;
+                }
+
+                _auxMay = (int)this.listaDeAutos[i].KmRecorrido();
+
+                if (_auxMay > _max)
+                {
+                    _max = _auxMay;
+                    _auxFabricanteMay = this.listaDeAutos[i].Fabricante();
+                }
+
+                _auxMen = (int)this.listaDeAutos[i].KmRecorrido();
+                if (_auxMen < _min)
+                {
+                    _min = _auxMen;
+                    _auxFabricanteMen = this.listaDeAutos[i].Fabricante();
+                }
+            }
+            #region Depreticated
+            /*_auxMay = (int)this.auto1.KmRecorrido();
             if (_auxMay > _max)
             {
                 _max = _auxMay;
@@ -162,30 +232,68 @@ namespace Ejercicio4
                 _min = _auxMen;
                 _auxFabricanteMen = this.auto6.Fabricante();
             }
-            Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("El mayor recorrido(Ganador): " + _max + "km" + " Hecho por: " + _auxFabricanteMay);
-            Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("El menor recorrido: " + _min + "km" + " Hecho por: " + _auxFabricanteMen);
+             * */
+            #endregion
+            sb.AppendLine("*******************************************************************************");
+            sb.AppendLine("*******************************************************************************");
+            sb.AppendLine("El mayor recorrido(Ganador): " + _max + "km" + " Hecho por: " + _auxFabricanteMay);
+            sb.AppendLine("*******************************************************************************");
+            sb.AppendLine("El menor recorrido: " + _min + "km" + " Hecho por: " + _auxFabricanteMen);
 
+
+            return sb.ToString();
         }
 
 
 
-        public void MostrarCarrera(Kilometros km)
+        public string MostrarCarrera(Kilometros km)
         {
-
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Carrera por " + (int)km + " Kilometros: ");
-            Console.WriteLine("*******************************************************************************");
+            StringBuilder sb = new StringBuilder();
+           sb.AppendLine();
+            
+             sb.AppendLine("Carrera por " + (int)km + " Kilometros: ");
+           sb.AppendLine("*******************************************************************************");
+            #region Depreticated
+/*
             this.auto1.MostrarAuto();
             this.auto2.MostrarAuto();
             this.auto3.MostrarAuto();
             this.auto4.MostrarAuto();
             this.auto5.MostrarAuto();
             this.auto6.MostrarAuto();
+ */
+#endregion
+            foreach (Auto car in this.listaDeAutos)
+            {
+                car.MostrarAuto();
+            }
 
+            for (int i = 0; i < this.listaDeAutos.Count; i++)
+            {
+                if (i == 0)
+                {
+                    _auxMay = (int)this.listaDeAutos[i].TiempoDemora();
+                    _auxMen = (int)this.listaDeAutos[i].TiempoDemora();
+                    continue;
+                }
+
+                _auxMay = (int)this.listaDeAutos[i].TiempoDemora();
+
+                if (_auxMay > _max)
+                {
+                    _max = _auxMay;
+                    _auxFabricanteMay = this.listaDeAutos[i].Fabricante();
+                }
+
+                _auxMen = (int)this.listaDeAutos[i].TiempoDemora();
+                if (_auxMen < _min)
+                {
+                    _min = _auxMen;
+                    _auxFabricanteMen = this.listaDeAutos[i].Fabricante();
+                }
+            }
+            #region Depreticated
+            /*
             _auxMay = (int)this.auto1.TiempoDemora();
             if (_auxMay > _max)
             {
@@ -259,13 +367,40 @@ namespace Ejercicio4
                 _min = _auxMen;
                 _auxFabricanteMen = this.auto6.Fabricante();
             }
-            Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("El mayor tiempo: " + _max + " minutos" + " Hecho por: " + _auxFabricanteMay );
-            Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("El menor tiempo(Ganador): " + _min + " minutos" + " Hecho por: " + _auxFabricanteMen);
-            
+ */
+            #endregion
+            sb.AppendLine("*******************************************************************************");
+            sb.AppendLine("*******************************************************************************");
+            sb.AppendLine("El mayor tiempo: " + _max + " minutos" + " Hecho por: " + _auxFabricanteMay );
+            sb.AppendLine("*******************************************************************************");
+            sb.AppendLine("El menor tiempo(Ganador): " + _min + " minutos" + " Hecho por: " + _auxFabricanteMen);
+
+
+
+
+            return sb.ToString();
         }
+
+        
+        #endregion
+
+        #region Colecciones
+
+        private bool agregarAuto(Auto unAuto)
+        {
+            listaDeAutos.Add(unAuto);
+            return true;
+        }
+
+        public static Carrera operator +(Carrera race, Auto unAuto)
+        {
+             race.agregarAuto(unAuto);
+             return race;
+        }
+
+        #endregion
+
     }
+    #endregion
 }
 
