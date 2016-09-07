@@ -23,7 +23,7 @@ namespace Ejercicio4
         #endregion
         public List<Auto> listaDeAutos;
         private static Random _rnd;
-        private int _auxMay, _max, _auxMen, _min = 1000000;
+        private int _auxMay, _max, _auxMen, _min = 100000;
         private EFabricante _auxFabricanteMay, _auxFabricanteMen;
         private Kilometros _km;
         private Tiempo _tiempo;
@@ -78,16 +78,32 @@ namespace Ejercicio4
 
         public void CorrerCarrera(Tiempo tiempo)
         {
+            StringBuilder sb = new StringBuilder();
+
             this.PorTiempo(tiempo);
-    
-            this.MostrarCarrera(tiempo);
+            sb.AppendLine();
+            sb.AppendLine("Carrera por " + (int)tiempo + " Minutos: ");
+            sb.AppendLine("*******************************************************************************");
+            Console.Write(sb);
+            Console.Write(this.MostrarCarrera(tiempo));
+
+           
         }
 
         public void CorrerCarrera(Kilometros kilometros)
         {
+          StringBuilder sb = new StringBuilder();
+
             this.PorKilometros(kilometros);
+        
+            sb.AppendLine();
+            sb.AppendLine("Carrera por " + (int)kilometros + " Kilometros: ");
+            sb.AppendLine("*******************************************************************************");
+            Console.Write(sb);
+            Console.Write(this.MostrarCarrera(kilometros));
             
-            this.MostrarCarrera(kilometros);
+           
+
         }
         #endregion
 
@@ -116,13 +132,11 @@ namespace Ejercicio4
         public string MostrarCarrera(Tiempo tiempo)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine();
-            sb.AppendLine("Carrera por " + (int)tiempo + " Minutos: ");
-            sb.AppendLine("*******************************************************************************");
+     
 
             foreach (Auto car in this.listaDeAutos)
             {
-                car.MostrarAuto();
+                Console.Write(car.retornarString());
             }
             #region Depreticated
 
@@ -138,8 +152,10 @@ namespace Ejercicio4
             {
                 if (i == 0)
                 {
-                   _auxMay = (int)this.listaDeAutos[i].KmRecorrido();
-                   _auxMen = (int)this.listaDeAutos[i].KmRecorrido();
+                   _max = (int)this.listaDeAutos[i].KmRecorrido();
+                   _min = (int)this.listaDeAutos[i].KmRecorrido();
+                   _auxFabricanteMay = this.listaDeAutos[i].Fabricante();
+                   _auxFabricanteMen = this.listaDeAutos[i].Fabricante();
                    continue;
                 }
 
@@ -240,7 +256,10 @@ namespace Ejercicio4
             sb.AppendLine("*******************************************************************************");
             sb.AppendLine("El menor recorrido: " + _min + "km" + " Hecho por: " + _auxFabricanteMen);
 
-
+            foreach (Auto item in this.listaDeAutos)
+            {
+                item.VolverACero();
+            }
             return sb.ToString();
         }
 
@@ -249,10 +268,7 @@ namespace Ejercicio4
         public string MostrarCarrera(Kilometros km)
         {
             StringBuilder sb = new StringBuilder();
-           sb.AppendLine();
-            
-             sb.AppendLine("Carrera por " + (int)km + " Kilometros: ");
-           sb.AppendLine("*******************************************************************************");
+     
             #region Depreticated
 /*
             this.auto1.MostrarAuto();
@@ -265,15 +281,17 @@ namespace Ejercicio4
 #endregion
             foreach (Auto car in this.listaDeAutos)
             {
-                car.MostrarAuto();
+                Console.Write(car.retornarString());
             }
 
             for (int i = 0; i < this.listaDeAutos.Count; i++)
             {
                 if (i == 0)
                 {
-                    _auxMay = (int)this.listaDeAutos[i].TiempoDemora();
-                    _auxMen = (int)this.listaDeAutos[i].TiempoDemora();
+                    _max = (int)this.listaDeAutos[i].TiempoDemora();
+                    _min = (int)this.listaDeAutos[i].TiempoDemora();
+                    _auxFabricanteMay = this.listaDeAutos[i].Fabricante();
+                    _auxFabricanteMen = this.listaDeAutos[i].Fabricante();
                     continue;
                 }
 
@@ -375,7 +393,10 @@ namespace Ejercicio4
             sb.AppendLine("*******************************************************************************");
             sb.AppendLine("El menor tiempo(Ganador): " + _min + " minutos" + " Hecho por: " + _auxFabricanteMen);
 
-
+            foreach (Auto item in this.listaDeAutos)
+            {
+                item.VolverACero();
+            }
 
 
             return sb.ToString();
