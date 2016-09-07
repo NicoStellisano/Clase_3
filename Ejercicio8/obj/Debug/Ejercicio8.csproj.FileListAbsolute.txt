@@ -1,6 +1,0 @@
-D:\Stellisano\PrimeraClase\Ejercicio8\bin\Debug\Ejercicio8.exe.config
-D:\Stellisano\PrimeraClase\Ejercicio8\bin\Debug\Ejercicio8.exe
-D:\Stellisano\PrimeraClase\Ejercicio8\bin\Debug\Ejercicio8.pdb
-D:\Stellisano\PrimeraClase\Ejercicio8\obj\Debug\Ejercicio8.csprojResolveAssemblyReference.cache
-D:\Stellisano\PrimeraClase\Ejercicio8\obj\Debug\Ejercicio8.exe
-D:\Stellisano\PrimeraClase\Ejercicio8\obj\Debug\Ejercicio8.pdb

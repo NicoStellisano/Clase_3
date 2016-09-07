@@ -24,7 +24,46 @@ namespace Ejercicio6
 
         private void btnSaludar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola Formulario");
+            string aux;
+            aux = this.txtNombre.Text;
+            MessageBox.Show(aux);
+            
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            this.label1.Text = "Cambie el Texto";
+        }
+
+        private void btnAprobarMateria_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAprobarMateria_MouseHover(object sender, EventArgs e)
+        {
+            this.btnAprobarMateria.Visible = false;
+        }
+
+        private void btnAprobarMateria_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnAprobarMateria.Visible = true;
+        }
+
+        private void btnAprobarMateria_MouseEnter(object sender, EventArgs e)
+        {
+            this.btnAprobarMateria.Visible = false;
+
         }
     }
 }
