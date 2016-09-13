@@ -8,22 +8,31 @@ namespace Ejercicio4
 {
     public class Auto
     {
+        private string _nombrePiloto;
+       
         private EFabricante fabricante;
         public Rueda ruedaDI;
         public Rueda ruedaDD;
         public Rueda ruedaTI;
         public Rueda ruedaTD;
         public static int contadorDeObjetos;
-        private static Random rnd;
+        private static Random _rnd;
         
         private Kilometros kmRecorridos;
         private Tiempo tiempoDemorado;
-        
+
+        public string DatosEnString
+        {
+            get
+            {
+                return this.retornarStringListado();
+            }
+        }
 
         public Auto()
         {
             //Random rnd = new Random();
-            int random = rnd.Next(0, 3);
+            int random = _rnd.Next(0, 3);
             this.fabricante = (EFabricante)random;
             this.ruedaDI = new Rueda();
             this.ruedaDD = new Rueda();
@@ -32,6 +41,12 @@ namespace Ejercicio4
             Auto.contadorDeObjetos++;
             this.kmRecorridos = 0;
             this.tiempoDemorado = 0;
+        }
+
+        public Auto(string nombreP, EFabricante Efabricante):this()
+        {
+            this._nombrePiloto = nombreP;
+            this.fabricante = Efabricante;
         }
 
         public static bool CompararAuto(Auto a1 ,Auto a2)
@@ -45,7 +60,7 @@ namespace Ejercicio4
          static Auto()
         {
             Auto.contadorDeObjetos = 0;
-            Auto.rnd = new Random();
+            Auto._rnd = new Random();
         }
 
          public void MostrarAuto()
@@ -57,6 +72,14 @@ namespace Ejercicio4
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("El fabricante es: " + this.fabricante + " Kilometros: " + (int)this.kmRecorridos + "km en: " + (int)this.tiempoDemorado + " minutos");
+
+            return sb.ToString();
+        }
+
+        public string retornarStringListado()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("F: " + this.fabricante + " P: " + this._nombrePiloto);
 
             return sb.ToString();
         }

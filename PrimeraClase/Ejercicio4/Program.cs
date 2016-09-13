@@ -37,7 +37,7 @@ namespace Ejercicio4
             tmp = 2;
             Kilometros km;
             km = 2;
-
+            //Dictionary<
            
           /*  EFabricante fabricante;
             fabricante = EFabricante.Honda;

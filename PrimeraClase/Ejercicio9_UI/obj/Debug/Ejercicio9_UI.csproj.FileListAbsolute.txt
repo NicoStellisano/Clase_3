@@ -1,0 +1,11 @@
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\bin\Debug\Ejercicio9_UI.exe.config
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\bin\Debug\Ejercicio9_UI.exe
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\bin\Debug\Ejercicio9_UI.pdb
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\bin\Debug\Ejercicio4.exe
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\bin\Debug\Ejercicio4.pdb
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\obj\Debug\Ejercicio9_UI.csprojResolveAssemblyReference.cache
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\obj\Debug\Ejercicio9_UI.Form1.resources
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\obj\Debug\Ejercicio9_UI.Properties.Resources.resources
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\obj\Debug\Ejercicio9_UI.csproj.GenerateResource.Cache
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\obj\Debug\Ejercicio9_UI.exe
+D:\GitStellisano\PrimeraClase\Ejercicio9_UI\obj\Debug\Ejercicio9_UI.pdb
