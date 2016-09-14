@@ -17,7 +17,7 @@ namespace Ejercicio9_UI
         private Carrera race;
         public string metodo;
         public int cantidad;
-        
+        private int aux;
 
         public Form1()
         {
@@ -33,12 +33,17 @@ namespace Ejercicio9_UI
 
             this.cmbCorrer.SelectedIndex = 1;
             this.cmbCorrer.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            this.cmbOrdenar.SelectedIndex = 1;
+            this.cmbOrdenar.DropDownStyle = ComboBoxStyle.DropDownList;
        
             
             this.txtFecha.Text = DateTime.Today.ToString();
             this.txtLugar.Text = "Avellaneda";
             this.txtNombre.Text = "Carrera 1";
             this.gpbAutos.Enabled = false;
+            this.gbpOrdenar.Enabled = false;
+
             this.gbpResultado.Enabled = false;
 
         }
@@ -59,6 +64,7 @@ namespace Ejercicio9_UI
            Auto auto = new Auto(this.txtNombreP.Text, (EFabricante)cmbFabricante.SelectedItem);
             this.race += auto;
             this.gbpResultado.Enabled = true;
+            this.gbpOrdenar.Enabled = true;
 
             cargarListado();
         }
@@ -110,19 +116,47 @@ namespace Ejercicio9_UI
             this.gpbAutos.Enabled = false;
             this.gbpResultado.Enabled = false;
             this.gpbCarrera.Enabled = true;
+            this.gbpOrdenar.Enabled = false;
+
             
         }
 
         private void btnOrdenar_Click(object sender, EventArgs e)
         {
-            this.race.listaDeAutos.Sort(Auto.OrdenarPorMarca);
-            cargarListado();
+            if (this.cmbOrdenar.Text == "Piloto" && this.radioButton1.Checked == true)
+                aux = 1;
+            if (this.cmbOrdenar.Text == "Piloto" && this.radioButton1.Checked == false)
+                aux = 2;
+            if (this.cmbOrdenar.Text == "Fabricante" && this.radioButton1.Checked == true)
+                aux = 3;
+            if (this.cmbOrdenar.Text == "Fabricante" && this.radioButton1.Checked == false)
+                aux = 4;
+            switch(aux)
+            {
+                case 1:
+                    this.race.listaDeAutos.Sort(Auto.OrdenarPorPiloto);
+                    cargarListado();
+                    break;
+                case 2:
+                    this.race.listaDeAutos.Sort(Auto.OrdenarPorPilotoD);
+                    cargarListado();
+                    break;
+                case 3:
+                    this.race.listaDeAutos.Sort(Auto.OrdenarPorMarca);
+                    cargarListado();
+                    break;
+                case 4:
+                    this.race.listaDeAutos.Sort(Auto.OrdenarPorMarcaD);
+                    cargarListado();
+                    break;
+
+            }
+            
         }
 
         private void btnOrdenarP_Click(object sender, EventArgs e)
         {
-            this.race.listaDeAutos.Sort(Auto.OrdenarPorPiloto);
-            cargarListado();
+            
         }
     }
 }

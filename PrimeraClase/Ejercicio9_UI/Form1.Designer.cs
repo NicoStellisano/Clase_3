@@ -53,12 +53,16 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnOrdenar = new System.Windows.Forms.Button();
-            this.btnOrdenarP = new System.Windows.Forms.Button();
+            this.gbpOrdenar = new System.Windows.Forms.GroupBox();
+            this.cmbOrdenar = new System.Windows.Forms.ComboBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.gpbCarrera.SuspendLayout();
             this.gpbAutos.SuspendLayout();
             this.gpbResultado.SuspendLayout();
             this.gbpResultado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.gbpOrdenar.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCrearCarrera
@@ -137,8 +141,6 @@
             // 
             // gpbAutos
             // 
-            this.gpbAutos.Controls.Add(this.btnOrdenarP);
-            this.gpbAutos.Controls.Add(this.btnOrdenar);
             this.gpbAutos.Controls.Add(this.cmbFabricante);
             this.gpbAutos.Controls.Add(this.lblFabricante);
             this.gpbAutos.Controls.Add(this.txtNombreP);
@@ -146,7 +148,7 @@
             this.gpbAutos.Controls.Add(this.btnAgregarAuto);
             this.gpbAutos.Location = new System.Drawing.Point(22, 133);
             this.gpbAutos.Name = "gpbAutos";
-            this.gpbAutos.Size = new System.Drawing.Size(241, 246);
+            this.gpbAutos.Size = new System.Drawing.Size(241, 166);
             this.gpbAutos.TabIndex = 2;
             this.gpbAutos.TabStop = false;
             this.gpbAutos.Text = "Autos";
@@ -186,7 +188,7 @@
             // 
             // btnAgregarAuto
             // 
-            this.btnAgregarAuto.Location = new System.Drawing.Point(27, 155);
+            this.btnAgregarAuto.Location = new System.Drawing.Point(27, 131);
             this.btnAgregarAuto.Name = "btnAgregarAuto";
             this.btnAgregarAuto.Size = new System.Drawing.Size(100, 29);
             this.btnAgregarAuto.TabIndex = 7;
@@ -199,7 +201,7 @@
             this.gpbResultado.Controls.Add(this.lbsListado);
             this.gpbResultado.Location = new System.Drawing.Point(272, 133);
             this.gpbResultado.Name = "gpbResultado";
-            this.gpbResultado.Size = new System.Drawing.Size(182, 246);
+            this.gpbResultado.Size = new System.Drawing.Size(182, 166);
             this.gpbResultado.TabIndex = 3;
             this.gpbResultado.TabStop = false;
             this.gpbResultado.Text = "Listado de Autos";
@@ -209,7 +211,7 @@
             this.lbsListado.FormattingEnabled = true;
             this.lbsListado.Location = new System.Drawing.Point(6, 19);
             this.lbsListado.Name = "lbsListado";
-            this.lbsListado.Size = new System.Drawing.Size(170, 212);
+            this.lbsListado.Size = new System.Drawing.Size(170, 134);
             this.lbsListado.TabIndex = 0;
             // 
             // gbpResultado
@@ -221,9 +223,9 @@
             this.gbpResultado.Controls.Add(this.cmbCorrer);
             this.gbpResultado.Controls.Add(this.lblCorrer);
             this.gbpResultado.Controls.Add(this.btnCorrer);
-            this.gbpResultado.Location = new System.Drawing.Point(23, 394);
+            this.gbpResultado.Location = new System.Drawing.Point(23, 413);
             this.gbpResultado.Name = "gbpResultado";
-            this.gbpResultado.Size = new System.Drawing.Size(431, 258);
+            this.gbpResultado.Size = new System.Drawing.Size(431, 239);
             this.gbpResultado.TabIndex = 4;
             this.gbpResultado.TabStop = false;
             this.gbpResultado.Text = "Resultado";
@@ -296,29 +298,71 @@
             // 
             // btnOrdenar
             // 
-            this.btnOrdenar.Location = new System.Drawing.Point(6, 190);
+            this.btnOrdenar.Location = new System.Drawing.Point(292, 33);
             this.btnOrdenar.Name = "btnOrdenar";
-            this.btnOrdenar.Size = new System.Drawing.Size(62, 41);
+            this.btnOrdenar.Size = new System.Drawing.Size(100, 37);
             this.btnOrdenar.TabIndex = 11;
             this.btnOrdenar.Text = "Ordenar";
             this.btnOrdenar.UseVisualStyleBackColor = true;
             this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
-            // btnOrdenarP
+            // gbpOrdenar
             // 
-            this.btnOrdenarP.Location = new System.Drawing.Point(96, 190);
-            this.btnOrdenarP.Name = "btnOrdenarP";
-            this.btnOrdenarP.Size = new System.Drawing.Size(62, 41);
-            this.btnOrdenarP.TabIndex = 12;
-            this.btnOrdenarP.Text = "Ordenar Piloto";
-            this.btnOrdenarP.UseVisualStyleBackColor = true;
-            this.btnOrdenarP.Click += new System.EventHandler(this.btnOrdenarP_Click);
+            this.gbpOrdenar.Controls.Add(this.radioButton2);
+            this.gbpOrdenar.Controls.Add(this.radioButton1);
+            this.gbpOrdenar.Controls.Add(this.cmbOrdenar);
+            this.gbpOrdenar.Controls.Add(this.btnOrdenar);
+            this.gbpOrdenar.Location = new System.Drawing.Point(19, 305);
+            this.gbpOrdenar.Name = "gbpOrdenar";
+            this.gbpOrdenar.Size = new System.Drawing.Size(435, 102);
+            this.gbpOrdenar.TabIndex = 5;
+            this.gbpOrdenar.TabStop = false;
+            this.gbpOrdenar.Text = "Ordenar";
+            // 
+            // cmbOrdenar
+            // 
+            this.cmbOrdenar.FormattingEnabled = true;
+            this.cmbOrdenar.Items.AddRange(new object[] {
+            "Piloto",
+            "Fabricante"});
+            this.cmbOrdenar.Location = new System.Drawing.Point(31, 42);
+            this.cmbOrdenar.Name = "cmbOrdenar";
+            this.cmbOrdenar.Size = new System.Drawing.Size(121, 21);
+            this.cmbOrdenar.TabIndex = 13;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.radioButton1.Location = new System.Drawing.Point(168, 42);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(46, 17);
+            this.radioButton1.TabIndex = 14;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "ASC";
+            this.radioButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.radioButton2.Location = new System.Drawing.Point(220, 43);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(47, 17);
+            this.radioButton2.TabIndex = 15;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "DES";
+            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(470, 664);
+            this.Controls.Add(this.gbpOrdenar);
             this.Controls.Add(this.gbpResultado);
             this.Controls.Add(this.gpbResultado);
             this.Controls.Add(this.gpbAutos);
@@ -334,6 +378,8 @@
             this.gbpResultado.ResumeLayout(false);
             this.gbpResultado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.gbpOrdenar.ResumeLayout(false);
+            this.gbpOrdenar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -365,7 +411,10 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnOrdenar;
-        private System.Windows.Forms.Button btnOrdenarP;
+        private System.Windows.Forms.GroupBox gbpOrdenar;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.ComboBox cmbOrdenar;
     }
 }
 
