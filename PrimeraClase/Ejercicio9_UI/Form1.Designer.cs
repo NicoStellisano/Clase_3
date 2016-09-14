@@ -52,6 +52,8 @@
             this.btnCorrer = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnOrdenar = new System.Windows.Forms.Button();
+            this.btnOrdenarP = new System.Windows.Forms.Button();
             this.gpbCarrera.SuspendLayout();
             this.gpbAutos.SuspendLayout();
             this.gpbResultado.SuspendLayout();
@@ -135,6 +137,8 @@
             // 
             // gpbAutos
             // 
+            this.gpbAutos.Controls.Add(this.btnOrdenarP);
+            this.gpbAutos.Controls.Add(this.btnOrdenar);
             this.gpbAutos.Controls.Add(this.cmbFabricante);
             this.gpbAutos.Controls.Add(this.lblFabricante);
             this.gpbAutos.Controls.Add(this.txtNombreP);
@@ -278,6 +282,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 14;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnLimpiar
             // 
@@ -288,6 +293,26 @@
             this.btnLimpiar.Text = "Limpiar Todo";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Location = new System.Drawing.Point(6, 190);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(62, 41);
+            this.btnOrdenar.TabIndex = 11;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
+            // 
+            // btnOrdenarP
+            // 
+            this.btnOrdenarP.Location = new System.Drawing.Point(96, 190);
+            this.btnOrdenarP.Name = "btnOrdenarP";
+            this.btnOrdenarP.Size = new System.Drawing.Size(62, 41);
+            this.btnOrdenarP.TabIndex = 12;
+            this.btnOrdenarP.Text = "Ordenar Piloto";
+            this.btnOrdenarP.UseVisualStyleBackColor = true;
+            this.btnOrdenarP.Click += new System.EventHandler(this.btnOrdenarP_Click);
             // 
             // Form1
             // 
@@ -339,6 +364,8 @@
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnOrdenar;
+        private System.Windows.Forms.Button btnOrdenarP;
     }
 }
 

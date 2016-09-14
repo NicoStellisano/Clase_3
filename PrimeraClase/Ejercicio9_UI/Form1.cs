@@ -112,5 +112,17 @@ namespace Ejercicio9_UI
             this.gpbCarrera.Enabled = true;
             
         }
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            this.race.listaDeAutos.Sort(Auto.OrdenarPorMarca);
+            cargarListado();
+        }
+
+        private void btnOrdenarP_Click(object sender, EventArgs e)
+        {
+            this.race.listaDeAutos.Sort(Auto.OrdenarPorPiloto);
+            cargarListado();
+        }
     }
 }

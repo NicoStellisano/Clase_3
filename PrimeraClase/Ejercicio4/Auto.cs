@@ -128,5 +128,15 @@ namespace Ejercicio4
              this.kmRecorridos += kilometros;
              this.tiempoDemorado = tiempo;
          }
+
+         public static int OrdenarPorMarca(Auto a1, Auto a2)
+         {
+             return a2.fabricante.ToString().CompareTo(a1.fabricante.ToString());
+         }
+
+         public static int OrdenarPorPiloto(Auto p1, Auto p2)
+         {
+             return p1._nombrePiloto.CompareTo(p2._nombrePiloto);
+         }
     }
 }
