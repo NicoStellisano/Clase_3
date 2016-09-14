@@ -45,16 +45,18 @@
             this.gpbResultado = new System.Windows.Forms.GroupBox();
             this.lbsListado = new System.Windows.Forms.ListBox();
             this.gbpResultado = new System.Windows.Forms.GroupBox();
-            this.btnCorrer = new System.Windows.Forms.Button();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.txtResultado = new System.Windows.Forms.TextBox();
             this.cmbCorrer = new System.Windows.Forms.ComboBox();
             this.lblCorrer = new System.Windows.Forms.Label();
-            this.txtResultado = new System.Windows.Forms.TextBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.lblCantidad = new System.Windows.Forms.Label();
+            this.btnCorrer = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.gpbCarrera.SuspendLayout();
             this.gpbAutos.SuspendLayout();
             this.gpbResultado.SuspendLayout();
             this.gbpResultado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCrearCarrera
@@ -208,7 +210,8 @@
             // 
             // gbpResultado
             // 
-            this.gbpResultado.Controls.Add(this.txtCantidad);
+            this.gbpResultado.Controls.Add(this.btnLimpiar);
+            this.gbpResultado.Controls.Add(this.numericUpDown1);
             this.gbpResultado.Controls.Add(this.lblCantidad);
             this.gbpResultado.Controls.Add(this.txtResultado);
             this.gbpResultado.Controls.Add(this.cmbCorrer);
@@ -221,15 +224,23 @@
             this.gbpResultado.TabStop = false;
             this.gbpResultado.Text = "Resultado";
             // 
-            // btnCorrer
+            // lblCantidad
             // 
-            this.btnCorrer.Location = new System.Drawing.Point(26, 114);
-            this.btnCorrer.Name = "btnCorrer";
-            this.btnCorrer.Size = new System.Drawing.Size(100, 34);
-            this.btnCorrer.TabIndex = 0;
-            this.btnCorrer.Text = "Correr Carrera";
-            this.btnCorrer.UseVisualStyleBackColor = true;
-            this.btnCorrer.Click += new System.EventHandler(this.btnCorrer_Click);
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Location = new System.Drawing.Point(24, 65);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(108, 13);
+            this.lblCantidad.TabIndex = 7;
+            this.lblCantidad.Text = "Cantidad de KM/MIN";
+            this.lblCantidad.Click += new System.EventHandler(this.lblCantidad_Click);
+            // 
+            // txtResultado
+            // 
+            this.txtResultado.Location = new System.Drawing.Point(164, 41);
+            this.txtResultado.Multiline = true;
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.Size = new System.Drawing.Size(261, 211);
+            this.txtResultado.TabIndex = 13;
             // 
             // cmbCorrer
             // 
@@ -251,29 +262,32 @@
             this.lblCorrer.TabIndex = 11;
             this.lblCorrer.Text = "Tipo de Carrera";
             // 
-            // txtResultado
+            // btnCorrer
             // 
-            this.txtResultado.Location = new System.Drawing.Point(164, 41);
-            this.txtResultado.Multiline = true;
-            this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(261, 211);
-            this.txtResultado.TabIndex = 13;
+            this.btnCorrer.Location = new System.Drawing.Point(26, 114);
+            this.btnCorrer.Name = "btnCorrer";
+            this.btnCorrer.Size = new System.Drawing.Size(100, 34);
+            this.btnCorrer.TabIndex = 0;
+            this.btnCorrer.Text = "Correr Carrera";
+            this.btnCorrer.UseVisualStyleBackColor = true;
+            this.btnCorrer.Click += new System.EventHandler(this.btnCorrer_Click);
             // 
-            // txtCantidad
+            // numericUpDown1
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(26, 79);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(100, 20);
-            this.txtCantidad.TabIndex = 8;
+            this.numericUpDown1.Location = new System.Drawing.Point(27, 88);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 14;
             // 
-            // lblCantidad
+            // btnLimpiar
             // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(23, 62);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(108, 13);
-            this.lblCantidad.TabIndex = 7;
-            this.lblCantidad.Text = "Cantidad de KM/MIN";
+            this.btnLimpiar.Location = new System.Drawing.Point(26, 204);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(100, 34);
+            this.btnLimpiar.TabIndex = 15;
+            this.btnLimpiar.Text = "Limpiar Todo";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // Form1
             // 
@@ -294,6 +308,7 @@
             this.gpbResultado.ResumeLayout(false);
             this.gbpResultado.ResumeLayout(false);
             this.gbpResultado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,8 +336,9 @@
         private System.Windows.Forms.Label lblCorrer;
         private System.Windows.Forms.Button btnCorrer;
         private System.Windows.Forms.TextBox txtResultado;
-        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 

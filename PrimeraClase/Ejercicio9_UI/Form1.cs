@@ -23,6 +23,7 @@ namespace Ejercicio9_UI
         {
             InitializeComponent();
 
+            
             foreach (EFabricante item in Enum.GetValues(typeof(EFabricante)))
             {
                 this.cmbFabricante.Items.Add(item);
@@ -37,12 +38,16 @@ namespace Ejercicio9_UI
             this.txtFecha.Text = DateTime.Today.ToString();
             this.txtLugar.Text = "Avellaneda";
             this.txtNombre.Text = "Carrera 1";
+            this.gpbAutos.Enabled = false;
+            this.gbpResultado.Enabled = false;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.race = new Carrera(this.txtNombre.Text, this.txtFecha.Text, this.txtLugar.Text);
-            this.gpbCarrera.Enabled = false;    
+            this.gpbCarrera.Enabled = false;
+            this.gpbAutos.Enabled = true;
         }
 
       
@@ -53,6 +58,7 @@ namespace Ejercicio9_UI
             
            Auto auto = new Auto(this.txtNombreP.Text, (EFabricante)cmbFabricante.SelectedItem);
             this.race += auto;
+            this.gbpResultado.Enabled = true;
 
             cargarListado();
         }
@@ -74,8 +80,8 @@ namespace Ejercicio9_UI
         private void btnCorrer_Click(object sender, EventArgs e)
         {
             this.txtResultado.Clear();
-            if (int.TryParse(this.txtCantidad.Text, out cantidad))
-                cantidad = cantidad;
+            cantidad = (int)this.numericUpDown1.Value;//int.TryParse(this.txtCantidad.Text, out cantidad))
+            
             metodo = this.cmbCorrer.Text;
           
             if (metodo == "Kilometros")
@@ -87,6 +93,24 @@ namespace Ejercicio9_UI
                 this.txtResultado.Text = this.race.CorrerCarrera((Tiempo)cantidad);
 
             }
+        }
+
+        private void lblCantidad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            this.txtResultado.Clear();
+            this.lbsListado.Items.Clear();
+            this.race.listaDeAutos.Clear();
+            this.txtNombreP.Clear();
+            this.numericUpDown1.Value = 0;
+            this.gpbAutos.Enabled = false;
+            this.gbpResultado.Enabled = false;
+            this.gpbCarrera.Enabled = true;
+            
         }
     }
 }
