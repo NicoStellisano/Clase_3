@@ -43,7 +43,7 @@ namespace Ejercicio9_UI
             this.txtNombre.Text = "Carrera 1";
             this.gpbAutos.Enabled = false;
             this.gbpOrdenar.Enabled = false;
-
+            this.gpbListado.Enabled = false;
             this.gbpResultado.Enabled = false;
 
         }
@@ -53,6 +53,8 @@ namespace Ejercicio9_UI
             this.race = new Carrera(this.txtNombre.Text, this.txtFecha.Text, this.txtLugar.Text);
             this.gpbCarrera.Enabled = false;
             this.gpbAutos.Enabled = true;
+            this.gpbListado.Enabled = true;
+
         }
 
       
@@ -117,6 +119,8 @@ namespace Ejercicio9_UI
             this.gbpResultado.Enabled = false;
             this.gpbCarrera.Enabled = true;
             this.gbpOrdenar.Enabled = false;
+            this.gpbListado.Enabled = false;
+
 
             
         }

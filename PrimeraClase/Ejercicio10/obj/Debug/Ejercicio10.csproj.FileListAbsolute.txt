@@ -1,0 +1,6 @@
+D:\GitStellisano\PrimeraClase\Ejercicio10\bin\Debug\Ejercicio10.exe.config
+D:\GitStellisano\PrimeraClase\Ejercicio10\bin\Debug\Ejercicio10.exe
+D:\GitStellisano\PrimeraClase\Ejercicio10\bin\Debug\Ejercicio10.pdb
+D:\GitStellisano\PrimeraClase\Ejercicio10\obj\Debug\Ejercicio10.csprojResolveAssemblyReference.cache
+D:\GitStellisano\PrimeraClase\Ejercicio10\obj\Debug\Ejercicio10.exe
+D:\GitStellisano\PrimeraClase\Ejercicio10\obj\Debug\Ejercicio10.pdb

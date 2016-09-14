@@ -42,7 +42,7 @@
             this.txtNombreP = new System.Windows.Forms.TextBox();
             this.lblNombreP = new System.Windows.Forms.Label();
             this.btnAgregarAuto = new System.Windows.Forms.Button();
-            this.gpbResultado = new System.Windows.Forms.GroupBox();
+            this.gpbListado = new System.Windows.Forms.GroupBox();
             this.lbsListado = new System.Windows.Forms.ListBox();
             this.gbpResultado = new System.Windows.Forms.GroupBox();
             this.lblCantidad = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.gpbCarrera.SuspendLayout();
             this.gpbAutos.SuspendLayout();
-            this.gpbResultado.SuspendLayout();
+            this.gpbListado.SuspendLayout();
             this.gbpResultado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.gbpOrdenar.SuspendLayout();
@@ -196,15 +196,15 @@
             this.btnAgregarAuto.UseVisualStyleBackColor = true;
             this.btnAgregarAuto.Click += new System.EventHandler(this.btnAgregarAuto_Click);
             // 
-            // gpbResultado
+            // gpbListado
             // 
-            this.gpbResultado.Controls.Add(this.lbsListado);
-            this.gpbResultado.Location = new System.Drawing.Point(272, 133);
-            this.gpbResultado.Name = "gpbResultado";
-            this.gpbResultado.Size = new System.Drawing.Size(182, 166);
-            this.gpbResultado.TabIndex = 3;
-            this.gpbResultado.TabStop = false;
-            this.gpbResultado.Text = "Listado de Autos";
+            this.gpbListado.Controls.Add(this.lbsListado);
+            this.gpbListado.Location = new System.Drawing.Point(272, 133);
+            this.gpbListado.Name = "gpbListado";
+            this.gpbListado.Size = new System.Drawing.Size(182, 166);
+            this.gpbListado.TabIndex = 3;
+            this.gpbListado.TabStop = false;
+            this.gpbListado.Text = "Listado de Autos";
             // 
             // lbsListado
             // 
@@ -352,7 +352,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(47, 17);
             this.radioButton2.TabIndex = 15;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "DES";
             this.radioButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -364,7 +363,7 @@
             this.ClientSize = new System.Drawing.Size(470, 664);
             this.Controls.Add(this.gbpOrdenar);
             this.Controls.Add(this.gbpResultado);
-            this.Controls.Add(this.gpbResultado);
+            this.Controls.Add(this.gpbListado);
             this.Controls.Add(this.gpbAutos);
             this.Controls.Add(this.gpbCarrera);
             this.Name = "Form1";
@@ -374,7 +373,7 @@
             this.gpbCarrera.PerformLayout();
             this.gpbAutos.ResumeLayout(false);
             this.gpbAutos.PerformLayout();
-            this.gpbResultado.ResumeLayout(false);
+            this.gpbListado.ResumeLayout(false);
             this.gbpResultado.ResumeLayout(false);
             this.gbpResultado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -395,7 +394,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.GroupBox gpbAutos;
-        private System.Windows.Forms.GroupBox gpbResultado;
+        private System.Windows.Forms.GroupBox gpbListado;
         private System.Windows.Forms.GroupBox gbpResultado;
         private System.Windows.Forms.Button btnAgregarAuto;
         private System.Windows.Forms.Label lblFabricante;
