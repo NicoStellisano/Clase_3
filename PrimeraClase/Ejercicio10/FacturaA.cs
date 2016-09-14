@@ -8,6 +8,10 @@ namespace Ejercicio10
 {
     public class FacturaA:Factura
     {
-
+        public int iva;
+        public FacturaA(int iva,Factura fact):base(fact.numero,fact.fecha,fact._numeroDeControl)
+        {
+            this.iva = iva;
+        }
     }
 }

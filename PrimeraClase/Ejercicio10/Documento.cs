@@ -9,8 +9,8 @@ namespace Ejercicio10
     public class Documento
     {
         public int numero;
-        protected string fecha;
-        private int _numeroDeControl;
+        public string fecha;
+        public int _numeroDeControl;
   
         public Documento(int numero)
         {

@@ -8,6 +8,10 @@ namespace Ejercicio10
 {
     public class FacturaAPagada:FacturaA
     {
-        
+        public string fechaDePago;
+        public FacturaAPagada(string fechaDePago, FacturaA factA):base(factA.iva,factA)
+        {
+            this.fechaDePago = fechaDePago;
+        }
     }
 }
