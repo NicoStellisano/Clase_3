@@ -9,5 +9,15 @@ namespace Ejercicio10
     public class Remito:Documento
     {
         public string fecha;
+
+        public Remito(int numero):base(numero)
+        {
+
+        }
+
+        public Remito(int numero, string fecha, int numeroDeControl): base(numero, fecha, numeroDeControl)
+        {
+
+        }
     }
 }

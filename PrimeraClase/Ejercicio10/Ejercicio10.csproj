@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Documento.cs" />
     <Compile Include="Factura.cs" />
+    <Compile Include="FacturaA.cs" />
+    <Compile Include="FacturaAPagada.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Remito.cs" />

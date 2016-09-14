@@ -10,5 +10,21 @@ namespace Ejercicio10
     {
         public float importe;
 
+        public Factura(int numero):base(numero)
+        {
+            
+        }
+          public Factura(int numero, string fecha, int numeroDeControl):base(numero,fecha,numeroDeControl)
+        {
+
+        }
+
+          public void algo()
+          {
+
+
+              this.fecha = "hoy";
+          
+          }
     }
 }
