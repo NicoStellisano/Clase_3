@@ -1,0 +1,5 @@
+D:\ArraysClases\Indexador\Libreria\bin\Debug\Libreria.dll
+D:\ArraysClases\Indexador\Libreria\bin\Debug\Libreria.pdb
+D:\ArraysClases\Indexador\Libreria\obj\Debug\Libreria.csprojResolveAssemblyReference.cache
+D:\ArraysClases\Indexador\Libreria\obj\Debug\Libreria.dll
+D:\ArraysClases\Indexador\Libreria\obj\Debug\Libreria.pdb
