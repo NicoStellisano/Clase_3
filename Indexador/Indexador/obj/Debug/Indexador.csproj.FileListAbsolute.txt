@@ -6,3 +6,6 @@ D:\ArraysClases\Indexador\Indexador\bin\Debug\Libreria.pdb
 D:\ArraysClases\Indexador\Indexador\obj\Debug\Indexador.csprojResolveAssemblyReference.cache
 D:\ArraysClases\Indexador\Indexador\obj\Debug\Indexador.exe
 D:\ArraysClases\Indexador\Indexador\obj\Debug\Indexador.pdb
+D:\Stellisano\Stellis\Indexador\Indexador\bin\Debug\Indexador.exe.config
+D:\Stellisano\Stellis\Indexador\Indexador\obj\Debug\Indexador.exe
+D:\Stellisano\Stellis\Indexador\Indexador\obj\Debug\Indexador.pdb
