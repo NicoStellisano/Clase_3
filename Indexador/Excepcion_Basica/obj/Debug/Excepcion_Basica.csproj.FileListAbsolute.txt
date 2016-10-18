@@ -4,3 +4,9 @@ D:\Stellisano\Stellis\Indexador\Excepcion_Basica\bin\Debug\Excepcion_Basica.pdb
 D:\Stellisano\Stellis\Indexador\Excepcion_Basica\obj\Debug\Excepcion_Basica.csprojResolveAssemblyReference.cache
 D:\Stellisano\Stellis\Indexador\Excepcion_Basica\obj\Debug\Excepcion_Basica.exe
 D:\Stellisano\Stellis\Indexador\Excepcion_Basica\obj\Debug\Excepcion_Basica.pdb
+D:\StellisanoClase_3\Indexador\Excepcion_Basica\bin\Debug\Excepcion_Basica.exe.config
+D:\StellisanoClase_3\Indexador\Excepcion_Basica\obj\Debug\Excepcion_Basica.exe
+D:\StellisanoClase_3\Indexador\Excepcion_Basica\obj\Debug\Excepcion_Basica.pdb
+D:\StellisanoClase_3\Indexador\Excepcion_Basica\bin\Debug\Excepcion_Basica.exe
+D:\StellisanoClase_3\Indexador\Excepcion_Basica\bin\Debug\Excepcion_Basica.pdb
+D:\StellisanoClase_3\Indexador\Excepcion_Basica\obj\Debug\Excepcion_Basica.csprojResolveAssemblyReference.cache

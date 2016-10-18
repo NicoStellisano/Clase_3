@@ -11,8 +11,31 @@ namespace Excepcion_Basica
        
         static void Main(string[] args)
         {
+             int aux;
+            Carrera race = new Carrera("Poli");
+            Auto auto = new Auto("Ford", 1);
+            Auto auto2 = new Auto("Chevrolet", 2);
+            Auto auto3 = new Auto("Fiat", 3);
+            Auto auto4 = new Auto("Citroen", 4);
+            race.listaDeAutos.Add(auto);
+            race.listaDeAutos.Add(auto2);
+            race.listaDeAutos.Add(auto3);
+            race.listaDeAutos.Add(auto4);
+
+            foreach (Auto item in race.listaDeAutos)
+            {
+                item.listadoRuedas.Add(new Rueda("Michelin" + (aux = new Random().Next(1,30)).ToString()));
+                item.listadoRuedas.Add(new Rueda("Michelin2"));
+                item.listadoRuedas.Add(new Rueda("Michelin3"));
+                item.listadoRuedas.Add(new Rueda("Michelin4"));
+            }
+            race.CorrerCarrera();
 
 
+
+           // auto.Andar();
+
+/*
             try
             {
                 LanzarError();
@@ -20,7 +43,7 @@ namespace Excepcion_Basica
             }
             catch (FormatException ex)
             {
-                Console.WriteLine("Error de Formato");
+                Console.WriteLine("Error de Formato"); 
                 Console.WriteLine(ex.Message);
             }
             catch (DivideByZeroException ex)
@@ -56,8 +79,10 @@ namespace Excepcion_Basica
                 //Operaciones para guardar informacion de la excepcion
                 throw new Exception("Se quedo sin internet");
             }
-          
+          */
+            Console.ReadKey();
         }
+ 
 
         public static void LanzarError()
         {
