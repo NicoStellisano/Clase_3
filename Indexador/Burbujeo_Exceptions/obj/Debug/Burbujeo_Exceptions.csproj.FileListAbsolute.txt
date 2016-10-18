@@ -1,0 +1,6 @@
+D:\StellisanoClase_3\Indexador\Burbujeo_Exceptions\bin\Debug\Burbujeo_Exceptions.exe.config
+D:\StellisanoClase_3\Indexador\Burbujeo_Exceptions\bin\Debug\Burbujeo_Exceptions.exe
+D:\StellisanoClase_3\Indexador\Burbujeo_Exceptions\bin\Debug\Burbujeo_Exceptions.pdb
+D:\StellisanoClase_3\Indexador\Burbujeo_Exceptions\obj\Debug\Burbujeo_Exceptions.csprojResolveAssemblyReference.cache
+D:\StellisanoClase_3\Indexador\Burbujeo_Exceptions\obj\Debug\Burbujeo_Exceptions.exe
+D:\StellisanoClase_3\Indexador\Burbujeo_Exceptions\obj\Debug\Burbujeo_Exceptions.pdb
