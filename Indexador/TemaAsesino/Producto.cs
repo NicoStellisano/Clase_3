@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TemaAsesino
+namespace Generics
 {
     public class Producto
     {
@@ -43,7 +43,7 @@ namespace TemaAsesino
             catch (Exception)
             {
                 
-                throw;
+               // throw;
             }
           
             return flag;

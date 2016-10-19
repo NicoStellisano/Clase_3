@@ -11,7 +11,6 @@ namespace Excepcion_Basica
        
         static void Main(string[] args)
         {
-             int aux;
             Carrera race = new Carrera("Poli");
             Auto auto = new Auto("Ford", 1);
             Auto auto2 = new Auto("Chevrolet", 2);
