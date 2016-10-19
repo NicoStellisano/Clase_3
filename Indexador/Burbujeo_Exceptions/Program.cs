@@ -10,17 +10,21 @@ namespace Burbujeo_Exceptions
     {
         static void Main(string[] args)
         {
+           
             try
             {
-                Persona per1 = new Persona("Alejandro");
+              //  Persona per1 = new Persona("Alejandro");
+                Persona per1 = new Persona("Leo");
+
                // per1.AsignarNumero();
-                per1.AsignarNumero();
+               // per1.AsignarNumero();
+                Persona.Statik(per1);
 
             }
 
            catch(ExceptionPerson exP)
            {
-               Console.WriteLine(exP.Message);
+               Console.WriteLine(exP.Message +" Program");
 
            }
 
@@ -29,6 +33,8 @@ namespace Burbujeo_Exceptions
 
                 Console.WriteLine(exN.Message);
             }
+
+            
             Console.ReadKey();
         }
     }

@@ -22,16 +22,43 @@ namespace Burbujeo_Exceptions
           //  throw new ExceptionName(("Nombre: " + this._nombre));
         }
 
-        public static void Algo()
+        //3.Instancia - Static - Constructor - Program
+        public Persona(int num)
         {
-            throw new ExceptionName("Ahi te va");
+            this.num = num;
+            //if (this._nombre == "Pedro")
+            try
+            {
+                Algo(this);
+            }
+            catch (ExceptionPerson exP)
+            {
+
+                throw new ExceptionName(exP.Message+("Nombre: " + this._nombre));
+            }
+
+            //Algo(this);
+        }
+
+        public static void Algo(Persona per)
+        {
+            try
+            {
+                per.AsignarNumero();
+            }
+            catch (ExceptionName exN)
+            {
+                throw new ExceptionPerson(exN.Message +" Static2");
+              //  new Persona(15);
+
+                //throw;
+            }
         }
 
         public void AsignarNumero()
         {
-            throw new ExceptionName("Alo Polisia");
-            //3.Instancia - Static - Constructor - Program
-            //4.3 Metodos - Static - Program
+            throw new ExceptionName("Instancia1");
+            
             //5.3 Instancia - Static - Constructor - Program
             /*try
             {
@@ -45,6 +72,54 @@ namespace Burbujeo_Exceptions
 
                 throw new ExceptionPerson(exN.Message + "1");
             }*/
+        }
+
+      
+        //4.3 Metodos - Static - Program
+        public void A()
+        {
+            throw new ExceptionName("1");
+
+        }
+        public void B()
+        {
+            try
+            {
+                this.A();
+            }
+            catch (ExceptionName exN)
+            {
+
+                throw new ExceptionName(exN.Message + ", 2");
+            }
+
+        }
+        public void C()
+        {
+            try
+            {
+                this.B();
+            }
+            catch (ExceptionName exN)
+            {
+
+                throw new ExceptionName(exN.Message + ", 3");
+                
+            }
+            throw new ExceptionName("Instancia1");
+
+        }
+        public static void Statik(Persona per)
+        {
+            try
+            {
+                per.C();
+            }
+            catch (ExceptionName exN)
+            {
+
+                throw new ExceptionPerson(exN.Message + ", 4S");
+            }
         }
 
         

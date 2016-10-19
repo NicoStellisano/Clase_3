@@ -24,10 +24,11 @@ namespace Excepcion_Basica
 
             foreach (Auto item in race.listaDeAutos)
             {
-                item.listadoRuedas.Add(new Rueda("Michelin" + (aux = new Random().Next(1,30)).ToString()));
-                item.listadoRuedas.Add(new Rueda("Michelin2"));
-                item.listadoRuedas.Add(new Rueda("Michelin3"));
-                item.listadoRuedas.Add(new Rueda("Michelin4"));
+                item.listadoRuedas.Add(new Rueda("Michelin" + RandomNumber(0,31).ToString()));
+                    //                   (aux = new Random().Next(1,30)).ToString()));
+                item.listadoRuedas.Add(new Rueda("Michelin2" + RandomNumber(0, 31).ToString()));
+                item.listadoRuedas.Add(new Rueda("Michelin3" + RandomNumber(0, 31).ToString()));
+                item.listadoRuedas.Add(new Rueda("Michelin4" + RandomNumber(0, 31).ToString()));
             }
             race.CorrerCarrera();
 
@@ -88,5 +89,11 @@ namespace Excepcion_Basica
         {
             throw new Exception("Se quedó sin Memoria RAM");
         }
+
+        public static int RandomNumber(int min, int max)
+        {        
+            return new Random().Next(min,max);        
+        }
+
     }
 }
