@@ -16,5 +16,11 @@ namespace Generics
             this.nombre = nombre;
             this.raza = raza;
         }
+
+        public override string ToString()
+        {
+            return ("Nombre: " + this.nombre + " Raza: " + this.raza);
+        }
+
     }
 }

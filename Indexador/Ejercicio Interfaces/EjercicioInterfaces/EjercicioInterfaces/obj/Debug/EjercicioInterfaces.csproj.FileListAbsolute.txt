@@ -1,0 +1,6 @@
+D:\StellGeneric\Indexador\Ejercicio Interfaces\EjercicioInterfaces\EjercicioInterfaces\bin\Debug\EjercicioInterfaces.exe.config
+D:\StellGeneric\Indexador\Ejercicio Interfaces\EjercicioInterfaces\EjercicioInterfaces\obj\Debug\EjercicioInterfaces.csprojResolveAssemblyReference.cache
+D:\StellGeneric\Indexador\Ejercicio Interfaces\EjercicioInterfaces\EjercicioInterfaces\bin\Debug\EjercicioInterfaces.exe
+D:\StellGeneric\Indexador\Ejercicio Interfaces\EjercicioInterfaces\EjercicioInterfaces\bin\Debug\EjercicioInterfaces.pdb
+D:\StellGeneric\Indexador\Ejercicio Interfaces\EjercicioInterfaces\EjercicioInterfaces\obj\Debug\EjercicioInterfaces.exe
+D:\StellGeneric\Indexador\Ejercicio Interfaces\EjercicioInterfaces\EjercicioInterfaces\obj\Debug\EjercicioInterfaces.pdb

@@ -43,6 +43,10 @@ namespace Generics
             depositoMas.Agregar(m2);
             depositoMas.Agregar(m3);
 
+            foreach (Mascota item in depositoMas.listaAlgo)
+            {
+                item.ToString();
+            }
 
 
             Console.ReadKey();

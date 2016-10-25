@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    public class Deposito<T>
+    public class Deposito<T>:IEnumerable<T>
     {
         public List<T> listaAlgo;
        public int cantMax;
@@ -48,6 +48,22 @@ namespace Generics
            return false;
        }
 
-       
+
+
+       public IEnumerator<T> GetEnumerator()
+       {
+           for (int i = 0; i < this.listaAlgo.Count; i++)
+           {
+               T item = this.listaAlgo[i];
+               yield return item;
+           }
+       }
+
+
+
+      // System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+      // {
+          // throw new NotImplementedException();
+      // }
     }
 }
