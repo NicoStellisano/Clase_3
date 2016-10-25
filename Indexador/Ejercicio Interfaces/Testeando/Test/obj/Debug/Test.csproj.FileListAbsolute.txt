@@ -1,0 +1,7 @@
+D:\StellGeneric\Indexador\Ejercicio Interfaces\Testeando\Test\bin\Debug\Test.dll
+D:\StellGeneric\Indexador\Ejercicio Interfaces\Testeando\Test\bin\Debug\Test.pdb
+D:\StellGeneric\Indexador\Ejercicio Interfaces\Testeando\Test\bin\Debug\Testeando.exe
+D:\StellGeneric\Indexador\Ejercicio Interfaces\Testeando\Test\bin\Debug\Testeando.pdb
+D:\StellGeneric\Indexador\Ejercicio Interfaces\Testeando\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\StellGeneric\Indexador\Ejercicio Interfaces\Testeando\Test\obj\Debug\Test.dll
+D:\StellGeneric\Indexador\Ejercicio Interfaces\Testeando\Test\obj\Debug\Test.pdb
