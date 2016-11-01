@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Burbujeo_Exceptions", "Burb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemaAsesino", "TemaAsesino\TemaAsesino.csproj", "{0436523E-0997-4F6C-BBF9-2BFE8B6B05C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escritura_En_Archivo", "Escritura_En_Archivo\Escritura_En_Archivo.csproj", "{79131154-8126-4118-A8B6-CAE97A673B50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Guardador", "UI_Guardador\UI_Guardador.csproj", "{1394D55D-E0BE-4A12-A8A1-46DCE859E9D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{0436523E-0997-4F6C-BBF9-2BFE8B6B05C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0436523E-0997-4F6C-BBF9-2BFE8B6B05C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0436523E-0997-4F6C-BBF9-2BFE8B6B05C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79131154-8126-4118-A8B6-CAE97A673B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79131154-8126-4118-A8B6-CAE97A673B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79131154-8126-4118-A8B6-CAE97A673B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79131154-8126-4118-A8B6-CAE97A673B50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1394D55D-E0BE-4A12-A8A1-46DCE859E9D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1394D55D-E0BE-4A12-A8A1-46DCE859E9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1394D55D-E0BE-4A12-A8A1-46DCE859E9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1394D55D-E0BE-4A12-A8A1-46DCE859E9D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

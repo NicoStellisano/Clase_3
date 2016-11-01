@@ -1,0 +1,6 @@
+D:\EqualsStellisano\Indexador\Escritura_En_Archivo\bin\Debug\Escritura_En_Archivo.exe.config
+D:\EqualsStellisano\Indexador\Escritura_En_Archivo\bin\Debug\Escritura_En_Archivo.exe
+D:\EqualsStellisano\Indexador\Escritura_En_Archivo\bin\Debug\Escritura_En_Archivo.pdb
+D:\EqualsStellisano\Indexador\Escritura_En_Archivo\obj\Debug\Escritura_En_Archivo.csprojResolveAssemblyReference.cache
+D:\EqualsStellisano\Indexador\Escritura_En_Archivo\obj\Debug\Escritura_En_Archivo.exe
+D:\EqualsStellisano\Indexador\Escritura_En_Archivo\obj\Debug\Escritura_En_Archivo.pdb

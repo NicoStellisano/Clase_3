@@ -7,3 +7,4 @@ D:\Stellisan\Indexador\TemaAsesino\obj\Debug\TemaAsesino.pdb
 D:\Stellisan\Indexador\TemaAsesino\bin\Debug\Generics.exe.config
 D:\StellGeneric\Indexador\TemaAsesino\bin\Debug\Generics.exe.config
 D:\StellGeneric\Indexador\TemaAsesino\obj\Debug\TemaAsesino.csprojResolveAssemblyReference.cache
+D:\EqualsStellisano\Indexador\TemaAsesino\bin\Debug\Generics.exe.config

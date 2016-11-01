@@ -1,0 +1,11 @@
+D:\EqualsStellisano\Indexador\UI_Guardador\bin\Debug\UI_Guardador.exe.config
+D:\EqualsStellisano\Indexador\UI_Guardador\bin\Debug\UI_Guardador.exe
+D:\EqualsStellisano\Indexador\UI_Guardador\bin\Debug\UI_Guardador.pdb
+D:\EqualsStellisano\Indexador\UI_Guardador\bin\Debug\Escritura_En_Archivo.exe
+D:\EqualsStellisano\Indexador\UI_Guardador\bin\Debug\Escritura_En_Archivo.pdb
+D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.csprojResolveAssemblyReference.cache
+D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.Form1.resources
+D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.Properties.Resources.resources
+D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.csproj.GenerateResource.Cache
+D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.exe
+D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.pdb
