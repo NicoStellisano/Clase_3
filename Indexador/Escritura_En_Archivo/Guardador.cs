@@ -63,5 +63,34 @@ namespace Escritura_En_Archivo
 
             return pers;
         }
+
+        public static List<Persona> RetornarListado()
+        {
+            List<Persona> miLista;
+            try
+            {
+                string renglon;
+                string[] aux;
+                miLista = new List<Persona>();
+
+                using (StreamReader lector = new StreamReader("Personas.txt"))
+                {
+
+                    while ((renglon = lector.ReadLine()) != null)
+                    {
+                        aux = renglon.Split(',');
+                        miLista.Add(new Persona(aux[0], aux[1]));
+
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+                return miLista;
+            
+        }
     }
 }

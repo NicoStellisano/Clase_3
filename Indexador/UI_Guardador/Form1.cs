@@ -31,7 +31,16 @@ namespace UI_Guardador
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             Guardador.GuardarPersona(new Persona(this.txtNombre.Text,this.txtClave.Text));
-            
+            CargarListado(Guardador.RetornarListado());
+        }
+
+        private void CargarListado(List<Persona> listado)
+        {
+            this.listBox1.Items.Clear();
+            foreach (Persona item in listado)
+            {
+                this.listBox1.Items.Add(item);
+            }
         }
     }
 }

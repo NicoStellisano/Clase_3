@@ -33,11 +33,12 @@
             this.btnIngresar = new System.Windows.Forms.Button();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblClave = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(120, 62);
+            this.txtNombre.Location = new System.Drawing.Point(46, 60);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(222, 20);
             this.txtNombre.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(120, 131);
+            this.txtClave.Location = new System.Drawing.Point(46, 129);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(222, 20);
             this.txtClave.TabIndex = 1;
@@ -53,7 +54,7 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(120, 196);
+            this.btnIngresar.Location = new System.Drawing.Point(46, 194);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(222, 42);
             this.btnIngresar.TabIndex = 2;
@@ -64,7 +65,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(117, 46);
+            this.lblNombre.Location = new System.Drawing.Point(43, 44);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 3;
@@ -73,17 +74,26 @@
             // lblClave
             // 
             this.lblClave.AutoSize = true;
-            this.lblClave.Location = new System.Drawing.Point(120, 115);
+            this.lblClave.Location = new System.Drawing.Point(46, 113);
             this.lblClave.Name = "lblClave";
             this.lblClave.Size = new System.Drawing.Size(34, 13);
             this.lblClave.TabIndex = 4;
             this.lblClave.Text = "Clave";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(302, 62);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 173);
+            this.listBox1.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 318);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.lblClave);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.btnIngresar);
@@ -103,6 +113,7 @@
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblClave;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
