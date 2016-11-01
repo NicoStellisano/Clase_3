@@ -18,7 +18,10 @@ namespace Escritura_En_Archivo
             */ 
 
             Persona per = new Persona("Robert", "asd123");
-            Guardador.GuardarPersona(per);
+           // Guardador.GuardarPersona(per);
+            Persona per2 = Guardador.LeerUnaPersona();
+
+
         }
     }
 }

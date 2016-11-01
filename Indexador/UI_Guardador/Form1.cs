@@ -17,5 +17,21 @@ namespace UI_Guardador
         {
             InitializeComponent();
         }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtClave_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            Guardador.GuardarPersona(new Persona(this.txtNombre.Text,this.txtClave.Text));
+            
+        }
     }
 }

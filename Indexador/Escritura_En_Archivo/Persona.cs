@@ -20,7 +20,7 @@ namespace Escritura_En_Archivo
        public override string ToString()
        {
            StringBuilder sb = new StringBuilder();
-           sb.AppendLine("Nombre: " + this._nombre + " Clave: " + this._clave);
+           sb.AppendLine(this._nombre + "," + this._clave);
            return sb.ToString();   
        }
     }

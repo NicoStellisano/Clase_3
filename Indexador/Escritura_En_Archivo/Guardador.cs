@@ -19,19 +19,49 @@ namespace Escritura_En_Archivo
             try
             {
                 sw = new StreamWriter("Personas.txt", true);
-                sw.WriteLine(per.ToString());
+                sw.Write(per.ToString());
                 flag = true;
             }
             catch (Exception)
             {
                 flag = false;
-                throw;
+                //throw;
             }
             finally
             {
                 sw.Close();
             }
             return flag;
+        }
+
+        public static Persona LeerUnaPersona()
+        {
+            Persona pers = null;
+            StreamReader lector = null;
+            bool flag = false;
+            string aux;
+            string[] arraystring;
+
+            try
+            {
+                lector = new StreamReader("Personas.txt");
+                aux = lector.ReadLine();
+                arraystring = aux.Split(',');
+                pers = new Persona(arraystring[0], arraystring[1]);
+                flag = true;
+
+            }
+            catch (Exception)
+            {
+                flag = false;
+                //throw;
+            }
+            finally
+            {
+                lector.Close();
+            }
+
+            return pers;
         }
     }
 }
