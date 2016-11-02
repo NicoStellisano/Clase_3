@@ -9,3 +9,6 @@ D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.Properties.Res
 D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.csproj.GenerateResource.Cache
 D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.exe
 D:\EqualsStellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.pdb
+D:\Stellisano\Indexador\UI_Guardador\bin\Debug\UI_Guardador.exe.config
+D:\Stellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.exe
+D:\Stellisano\Indexador\UI_Guardador\obj\Debug\UI_Guardador.pdb
