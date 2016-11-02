@@ -12,6 +12,8 @@ namespace Serializacion
             Persona pers = new Persona("Nico");
             Persona pers2 = new Persona("Tomas");
              Persona pers3 = new Persona("Octavio");
+             Persona pers4 = new Persona("Kappa");
+
 
 
             List<Persona> listadoPersonas = new List<Persona>();
@@ -25,6 +27,8 @@ namespace Serializacion
             Serializador.SerializarPersona(pers);
             Serializador.SerializarListaPersonas(listadoPersonas);
             Serializador.SerializarAula(aula);
+            Serializador.SerializarGenerico(pers4);
+            Serializador.DeserializarPersona();
            // Console.ReadKey();
         }
     }

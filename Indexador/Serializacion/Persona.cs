@@ -25,5 +25,23 @@ namespace Serializacion
         {
             return Serializador.SerializarPersona(this);
         }
+
+
+        public bool Deserializar()
+        {
+            bool flag = false;
+            try
+            {
+                Persona aux = Serializador.DeserializarPersona();
+                flag = true;
+                this.nombre = aux.nombre;
+            }
+            catch (Exception)
+            {
+                flag = false;
+                throw;
+            }
+            return flag;
+        }
     }
 }

@@ -29,6 +29,29 @@ namespace Serializacion
             return flag;
         }
 
+        public static Persona DeserializarPersona()
+        {
+           // bool flag = false;
+            Persona person = null;
+
+            try
+            {
+                using (XmlTextReader lector = new XmlTextReader("Persona.xml"))
+                {
+                    XmlSerializer serializador = new XmlSerializer(typeof(Persona));
+                    person = (Persona)serializador.Deserialize(lector);
+                   // flag = true;
+                }
+            }
+            catch (Exception)
+            {
+              //  flag = false;
+                //throw;
+            }
+            return person;
+        }
+
+
         public static void SerializarListaPersonas(List<Persona> listadoPer)
         {
             try
@@ -63,6 +86,11 @@ namespace Serializacion
                 throw;
             }
 
+        }
+
+        public static bool SerializarGenerico(ISerializable2016 Iseria)
+        {
+            return Iseria.Serializar();
         }
     }
 }

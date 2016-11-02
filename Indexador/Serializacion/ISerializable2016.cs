@@ -8,5 +8,6 @@ namespace Serializacion
     public interface ISerializable2016
     {
         bool Serializar();
+        bool Deserializar();
     }
 }
