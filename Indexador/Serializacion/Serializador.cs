@@ -26,5 +26,41 @@ namespace Serializacion
             }
          
         }
+
+        public static void SerializarListaPersonas(List<Persona> listadoPer)
+        {
+            try
+            {
+                using (XmlTextWriter escritor = new XmlTextWriter("ListadoPersonas.xml", Encoding.UTF8))
+                {
+                    XmlSerializer serializador = new XmlSerializer(typeof(List<Persona>));
+                    serializador.Serialize(escritor, listadoPer);
+                }
+            }
+            catch (Exception)
+            {
+
+                // throw;
+            }
+
+        }
+
+        public static void SerializarAula(Aula aula)
+        {
+            try
+            {
+                using (XmlTextWriter escritor = new XmlTextWriter("Aula.xml", Encoding.UTF8))
+                {
+                    XmlSerializer serializador = new XmlSerializer(typeof(Aula));
+                    serializador.Serialize(escritor, aula);
+                }
+            }
+            catch (Exception)
+            {
+
+                // throw;
+            }
+
+        }
     }
 }
