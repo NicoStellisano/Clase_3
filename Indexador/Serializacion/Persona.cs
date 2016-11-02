@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 namespace Serializacion
 {
 [XmlInclude(typeof(Alumno))]
-    public class Persona
+    public class Persona:ISerializable2016
     {
         public string nombre;
         public Persona()
@@ -21,8 +21,9 @@ namespace Serializacion
             this.nombre = nombre;
         }
 
-        
-        
-        
+        public bool Serializar()
+        {
+            return Serializador.SerializarPersona(this);
+        }
     }
 }

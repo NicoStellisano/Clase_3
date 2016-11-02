@@ -9,22 +9,24 @@ namespace Serializacion
 {
     public static class Serializador
     {
-        public static void SerializarPersona(Persona per)
+        public static bool SerializarPersona(Persona per)
         {
+            bool flag = false;
             try
             {
                 using (XmlTextWriter escritor = new XmlTextWriter("Persona.xml", Encoding.UTF8))
                 {
                     XmlSerializer serializador = new XmlSerializer(typeof(Persona));
                     serializador.Serialize(escritor, per);
+                    flag = true;
                 }
             }
             catch (Exception)
             {
-                
+                flag = false;
                // throw;
             }
-         
+            return flag;
         }
 
         public static void SerializarListaPersonas(List<Persona> listadoPer)
@@ -58,7 +60,7 @@ namespace Serializacion
             catch (Exception)
             {
 
-                // throw;
+                throw;
             }
 
         }

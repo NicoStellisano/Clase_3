@@ -8,14 +8,33 @@ namespace Serializacion
     public class Aula
     {
         public int numero;
-        public List<Persona> listadoPersona;
-        Persona profesor;
-
-        public Aula(List<Persona> listado,Persona profesor,int numero)
+        private List<Persona> _listadoPersona;
+        public List<Persona> ListaPersonas
         {
-            this.listadoPersona = listado;
+            get { return this._listadoPersona; }
+        }
+        Persona profesor;
+        private string _nombreAula;
+       
+
+        public string NombreAula
+        {
+            get { return this._nombreAula; }
+            set { this._nombreAula = value; }
+        }
+        
+
+        public Aula()
+        {
+
+        }
+
+        public Aula(List<Persona> listado,Persona profesor,int numero,string nombreAula)
+        {
+            this._listadoPersona = listado;
             this.profesor = profesor;
             this.numero = numero;
+            this._nombreAula = nombreAula;
         }
     }
 }

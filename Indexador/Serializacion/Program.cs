@@ -19,7 +19,7 @@ namespace Serializacion
             listadoPersonas.Add(pers2);
             Alumno alum = new Alumno(45645,"Carlo");
             listadoPersonas.Add(alum);
-            Aula aula = new Aula(listadoPersonas, pers3, 123);
+            Aula aula = new Aula(listadoPersonas, pers3, 123,"Aula1");
 
            // pers.nombre = "Nico";
             Serializador.SerializarPersona(pers);
