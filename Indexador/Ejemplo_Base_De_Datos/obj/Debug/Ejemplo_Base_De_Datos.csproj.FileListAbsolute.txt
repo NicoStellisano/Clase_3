@@ -1,0 +1,9 @@
+D:\SteClases\Indexador\Ejemplo_Base_De_Datos\bin\Debug\Ejemplo_Base_De_Datos.exe.config
+D:\SteClases\Indexador\Ejemplo_Base_De_Datos\bin\Debug\Ejemplo_Base_De_Datos.exe
+D:\SteClases\Indexador\Ejemplo_Base_De_Datos\bin\Debug\Ejemplo_Base_De_Datos.pdb
+D:\SteClases\Indexador\Ejemplo_Base_De_Datos\obj\Debug\Ejemplo_Base_De_Datos.csprojResolveAssemblyReference.cache
+D:\SteClases\Indexador\Ejemplo_Base_De_Datos\obj\Debug\Ejemplo_Base_De_Datos.Form1.resources
+D:\SteClases\Indexador\Ejemplo_Base_De_Datos\obj\Debug\Ejemplo_Base_De_Datos.Properties.Resources.resources
+D:\SteClases\Indexador\Ejemplo_Base_De_Datos\obj\Debug\Ejemplo_Base_De_Datos.csproj.GenerateResource.Cache
+D:\SteClases\Indexador\Ejemplo_Base_De_Datos\obj\Debug\Ejemplo_Base_De_Datos.exe
+D:\SteClases\Indexador\Ejemplo_Base_De_Datos\obj\Debug\Ejemplo_Base_De_Datos.pdb

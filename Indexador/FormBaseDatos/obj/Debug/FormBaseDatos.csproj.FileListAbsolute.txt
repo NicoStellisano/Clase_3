@@ -1,0 +1,8 @@
+D:\SteClases\Indexador\FormBaseDatos\bin\Debug\FormBaseDatos.exe.config
+D:\SteClases\Indexador\FormBaseDatos\bin\Debug\FormBaseDatos.exe
+D:\SteClases\Indexador\FormBaseDatos\bin\Debug\FormBaseDatos.pdb
+D:\SteClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.Form1.resources
+D:\SteClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.Properties.Resources.resources
+D:\SteClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.csproj.GenerateResource.Cache
+D:\SteClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.exe
+D:\SteClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.pdb

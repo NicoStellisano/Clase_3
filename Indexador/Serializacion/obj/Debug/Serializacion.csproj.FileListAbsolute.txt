@@ -3,3 +3,5 @@ D:\Stellisano\Indexador\Serializacion\bin\Debug\Serializacion.pdb
 D:\Stellisano\Indexador\Serializacion\obj\Debug\Serializacion.csprojResolveAssemblyReference.cache
 D:\Stellisano\Indexador\Serializacion\obj\Debug\Serializacion.exe
 D:\Stellisano\Indexador\Serializacion\obj\Debug\Serializacion.pdb
+D:\SteClases\Indexador\Serializacion\obj\Debug\Serializacion.exe
+D:\SteClases\Indexador\Serializacion\obj\Debug\Serializacion.pdb

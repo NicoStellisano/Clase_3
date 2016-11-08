@@ -1,0 +1,9 @@
+/*Select simple*/
+select id,apellido from Persona where id>100
+/*Insert simple*/
+insert into Persona(nombre,apellido,sexo) values('Wallace','Water','Masculino'),('John','Travolta','Masculino'),('Lu','Cristaldo','Femenino'),('Alejandro','Tello','Masculino'),('John','Diggle','Masculino')
+insert into Localidad(descripcion) values('Lanus'),('Temperley'),('Lomas de Zamora') 
+/*Update*/
+update Persona set sexo='Mujer' where sexo='Femenino'
+/*Delete*/
+delete from Persona where nombre = 'Jose'
