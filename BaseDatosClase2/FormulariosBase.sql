@@ -1,0 +1,1 @@
+insert into Pers(nombre,apellido,edad) values('Nicolás','Stellisano',18),('Matias','Chiofalo',20)
