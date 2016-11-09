@@ -6,3 +6,6 @@ D:\SteClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.Properties.Resource
 D:\SteClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.csproj.GenerateResource.Cache
 D:\SteClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.exe
 D:\SteClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.pdb
+D:\StellisanoClases\Indexador\FormBaseDatos\bin\Debug\FormBaseDatos.exe.config
+D:\StellisanoClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.exe
+D:\StellisanoClases\Indexador\FormBaseDatos\obj\Debug\FormBaseDatos.pdb
