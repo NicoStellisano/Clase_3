@@ -5,19 +5,20 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Windows.Forms;
 
-namespace Pelotita_3
+
+namespace Pelotitas_4
 {
     public partial class Form1 : Form
     {
-        private Thread _miHilo;
+        private List<PelotitaConHilo> _listaPH;
         public Form1()
         {
             InitializeComponent();
-            
+            _listaPH = new List<PelotitaConHilo>();
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -25,13 +26,16 @@ namespace Pelotita_3
             try
             {
                 Pelotita_Con_Threads.Pelotita pelotita = new Pelotita_Con_Threads.Pelotita(this.pictureBox1);
-                this._miHilo = new Thread(pelotita.DoWork);
-                this._miHilo.Start();
-                this.btnCrear.Click -= new System.EventHandler(this.btnCrear_Click);
+                Thread th = new Thread(pelotita.DoWork);
+                PelotitaConHilo ph = new PelotitaConHilo(pelotita, th);
+                th.Start();
+
+                this._listaPH.Add(ph);
+             //   this.btnCrear.Click -= new System.EventHandler(this.btnCrear_Click);
             }
             catch (Exception)
             {
-              
+
             }
 
         }
@@ -40,51 +44,53 @@ namespace Pelotita_3
         {
             try
             {
-                this._miHilo.Suspend();
+                this._listaPH[this._listaPH.Count - 1].hilo.Suspend();
+
+                
 
             }
             catch (Exception)
             {
-                
-                
+
+
             }
-         
+
         }
 
         private void btnDestruir_Click(object sender, EventArgs e)
         {
             try
             {
-                this._miHilo.Abort();
+                this._listaPH[this._listaPH.Count-1].hilo.Abort();
+                this._listaPH.RemoveAt(this._listaPH.Count - 1);
                 Graphics g = this.pictureBox1.CreateGraphics();
                 g.Clear(this.pictureBox1.BackColor);
             }
             catch (Exception)
             {
-                
-                
+
+
             }
-   
+
         }
 
-    
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btnRenaudar_Click(object sender, EventArgs e)
         {
             try
             {
-                if (this._miHilo.ThreadState == ThreadState.Suspended)
-                    this._miHilo.Resume();
+                if (this._listaPH[this._listaPH.Count - 1].hilo.ThreadState == ThreadState.Suspended)
+                    this._listaPH[this._listaPH.Count - 1].hilo.Resume();
 
             }
             catch (Exception)
             {
-                
-                
-            }
-            
-        }
 
+
+            }
+
+        }
 
     }
 }
