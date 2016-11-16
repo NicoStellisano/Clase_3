@@ -1,0 +1,13 @@
+D:\HilosStellisano\Hilos\Pelotita_2\bin\Debug\Pelotita_2.exe.config
+D:\HilosStellisano\Hilos\Pelotita_2\bin\Debug\Pelotita_2.exe
+D:\HilosStellisano\Hilos\Pelotita_2\bin\Debug\Pelotita_2.pdb
+D:\HilosStellisano\Hilos\Pelotita_2\bin\Debug\Pelotita_Con_Thread.dll
+D:\HilosStellisano\Hilos\Pelotita_2\bin\Debug\Pelotita_Sin_Thread.dll
+D:\HilosStellisano\Hilos\Pelotita_2\bin\Debug\Pelotita_Con_Thread.pdb
+D:\HilosStellisano\Hilos\Pelotita_2\bin\Debug\Pelotita_Sin_Thread.pdb
+D:\HilosStellisano\Hilos\Pelotita_2\obj\Debug\Pelotita_2.csprojResolveAssemblyReference.cache
+D:\HilosStellisano\Hilos\Pelotita_2\obj\Debug\Pelotita_2.Form1.resources
+D:\HilosStellisano\Hilos\Pelotita_2\obj\Debug\Pelotita_2.Properties.Resources.resources
+D:\HilosStellisano\Hilos\Pelotita_2\obj\Debug\Pelotita_2.csproj.GenerateResource.Cache
+D:\HilosStellisano\Hilos\Pelotita_2\obj\Debug\Pelotita_2.exe
+D:\HilosStellisano\Hilos\Pelotita_2\obj\Debug\Pelotita_2.pdb
