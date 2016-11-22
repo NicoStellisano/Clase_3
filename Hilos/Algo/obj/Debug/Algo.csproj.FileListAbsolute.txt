@@ -1,0 +1,6 @@
+D:\eventosstelli\Hilos\Algo\bin\Debug\Algo.exe.config
+D:\eventosstelli\Hilos\Algo\obj\Debug\Algo.csprojResolveAssemblyReference.cache
+D:\eventosstelli\Hilos\Algo\bin\Debug\Algo.exe
+D:\eventosstelli\Hilos\Algo\bin\Debug\Algo.pdb
+D:\eventosstelli\Hilos\Algo\obj\Debug\Algo.exe
+D:\eventosstelli\Hilos\Algo\obj\Debug\Algo.pdb

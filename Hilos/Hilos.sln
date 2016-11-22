@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventos", "Eventos\Eventos.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases_Eventos", "Clases_Eventos\Clases_Eventos.csproj", "{69CD7B50-4764-4128-9AD2-FC1E0AEC15C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo", "Algo\Algo.csproj", "{C2E35C11-CD08-43EA-8F11-92C2B286D83E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{69CD7B50-4764-4128-9AD2-FC1E0AEC15C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69CD7B50-4764-4128-9AD2-FC1E0AEC15C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69CD7B50-4764-4128-9AD2-FC1E0AEC15C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E35C11-CD08-43EA-8F11-92C2B286D83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E35C11-CD08-43EA-8F11-92C2B286D83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E35C11-CD08-43EA-8F11-92C2B286D83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E35C11-CD08-43EA-8F11-92C2B286D83E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
