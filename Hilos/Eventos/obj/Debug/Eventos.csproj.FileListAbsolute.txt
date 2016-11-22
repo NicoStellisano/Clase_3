@@ -1,0 +1,11 @@
+D:\eventosstelli\Hilos\Eventos\bin\Debug\Eventos.exe.config
+D:\eventosstelli\Hilos\Eventos\bin\Debug\Eventos.exe
+D:\eventosstelli\Hilos\Eventos\bin\Debug\Eventos.pdb
+D:\eventosstelli\Hilos\Eventos\obj\Debug\Eventos.csprojResolveAssemblyReference.cache
+D:\eventosstelli\Hilos\Eventos\obj\Debug\Eventos.Form1.resources
+D:\eventosstelli\Hilos\Eventos\obj\Debug\Eventos.Properties.Resources.resources
+D:\eventosstelli\Hilos\Eventos\obj\Debug\Eventos.csproj.GenerateResource.Cache
+D:\eventosstelli\Hilos\Eventos\obj\Debug\Eventos.exe
+D:\eventosstelli\Hilos\Eventos\obj\Debug\Eventos.pdb
+D:\eventosstelli\Hilos\Eventos\bin\Debug\Clases_Eventos.dll
+D:\eventosstelli\Hilos\Eventos\bin\Debug\Clases_Eventos.pdb

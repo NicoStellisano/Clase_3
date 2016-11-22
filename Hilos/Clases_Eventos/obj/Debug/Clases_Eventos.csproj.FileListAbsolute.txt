@@ -1,0 +1,5 @@
+D:\eventosstelli\Hilos\Clases_Eventos\bin\Debug\Clases_Eventos.dll
+D:\eventosstelli\Hilos\Clases_Eventos\bin\Debug\Clases_Eventos.pdb
+D:\eventosstelli\Hilos\Clases_Eventos\obj\Debug\Clases_Eventos.csprojResolveAssemblyReference.cache
+D:\eventosstelli\Hilos\Clases_Eventos\obj\Debug\Clases_Eventos.dll
+D:\eventosstelli\Hilos\Clases_Eventos\obj\Debug\Clases_Eventos.pdb

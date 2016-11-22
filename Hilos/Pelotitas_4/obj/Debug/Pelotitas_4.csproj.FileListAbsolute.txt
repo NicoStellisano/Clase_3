@@ -10,3 +10,6 @@ D:\HilosStellisano\Hilos\Pelotitas_4\bin\Debug\Pelotita_Con_Thread.pdb
 D:\HilosStellisano\Hilos\Pelotitas_4\bin\Debug\Pelotita_Sin_Thread.pdb
 D:\HilosStellisano\Hilos\Pelotitas_4\obj\Debug\Pelotitas_4.exe
 D:\HilosStellisano\Hilos\Pelotitas_4\obj\Debug\Pelotitas_4.pdb
+D:\eventosstelli\Hilos\Pelotitas_4\bin\Debug\Pelotitas_4.exe.config
+D:\eventosstelli\Hilos\Pelotitas_4\obj\Debug\Pelotitas_4.exe
+D:\eventosstelli\Hilos\Pelotitas_4\obj\Debug\Pelotitas_4.pdb
