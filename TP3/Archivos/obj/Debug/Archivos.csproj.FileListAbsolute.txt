@@ -1,0 +1,24 @@
+C:\Users\Nico\Documents\GitHub\TPcentralitacSharp2016\TP3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+C:\Users\Nico\Documents\GitHub\TPcentralitacSharp2016\TP3\Archivos\bin\Debug\Archivos.exe.config
+C:\Users\Nico\Documents\GitHub\TPcentralitacSharp2016\TP3\Archivos\bin\Debug\Archivos.exe
+C:\Users\Nico\Documents\GitHub\TPcentralitacSharp2016\TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Nico\Documents\GitHub\TPcentralitacSharp2016\TP3\Archivos\bin\Debug\Excepciones.exe
+C:\Users\Nico\Documents\GitHub\TPcentralitacSharp2016\TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\Nico\Documents\GitHub\TPcentralitacSharp2016\TP3\Archivos\obj\Debug\Archivos.exe
+C:\Users\Nico\Documents\GitHub\TPcentralitacSharp2016\TP3\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Nico\Downloads\TP3\TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Nico\Downloads\TP3\TP3\Archivos\bin\Debug\Excepciones.exe
+C:\Users\Nico\Downloads\TP3\TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\Nico\Downloads\TP3\TP3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+C:\Users\Nico\Downloads\TP3\TP3\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Nico\Downloads\TP3\TP3\Archivos\bin\Debug\Archivos.dll.config
+C:\Users\Nico\Downloads\TP3\TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\Nico\Downloads\TP3\TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\Nico\Downloads\TP3 (1)\TP3\Archivos\bin\Debug\Archivos.dll.config
+C:\Users\Nico\Downloads\TP3 (1)\TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\Nico\Downloads\TP3 (1)\TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Nico\Downloads\TP3 (1)\TP3\Archivos\bin\Debug\Excepciones.dll
+C:\Users\Nico\Downloads\TP3 (1)\TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\Nico\Downloads\TP3 (1)\TP3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+C:\Users\Nico\Downloads\TP3 (1)\TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\Nico\Downloads\TP3 (1)\TP3\Archivos\obj\Debug\Archivos.pdb

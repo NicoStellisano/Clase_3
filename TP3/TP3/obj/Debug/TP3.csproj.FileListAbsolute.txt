@@ -1,0 +1,28 @@
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\TP3.exe.config
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\TP3.exe
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\TP3.pdb
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\Archivos.dll
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\EntidadesAbstractas.dll
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\EntidadesInstanciables.dll
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\Excepciones.exe
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\Archivos.pdb
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\EntidadesAbstractas.pdb
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\EntidadesInstanciables.pdb
+C:\Users\Nico\Downloads\TP3\TP3\TP3\bin\Debug\Excepciones.pdb
+C:\Users\Nico\Downloads\TP3\TP3\TP3\obj\Debug\TP3.csprojResolveAssemblyReference.cache
+C:\Users\Nico\Downloads\TP3\TP3\TP3\obj\Debug\TP3.exe
+C:\Users\Nico\Downloads\TP3\TP3\TP3\obj\Debug\TP3.pdb
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\TP3.exe.config
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\obj\Debug\TP3.exe
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\obj\Debug\TP3.pdb
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\TP3.exe
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\TP3.pdb
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\Archivos.dll
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\EntidadesAbstractas.dll
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\EntidadesInstanciables.dll
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\Excepciones.dll
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\Archivos.pdb
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\EntidadesAbstractas.pdb
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\EntidadesInstanciables.pdb
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\bin\Debug\Excepciones.pdb
+C:\Users\Nico\Downloads\TP3 (1)\TP3\TP3\obj\Debug\TP3.csprojResolveAssemblyReference.cache
